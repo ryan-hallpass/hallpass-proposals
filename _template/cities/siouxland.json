@@ -91,10 +91,10 @@
     "photo_credits_html": "All photos courtesy of <a href=\"https://exploresiouxland.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Explore Siouxland</a>; hero photo by Britton Hacke Photography."
   },
   "postcard": {
-    "photo": "_src/postcards/cc/saturday-in-the-park.jpg",
-    "photo_position": "42% center",
-    "photo_tag": "Saturday in the Park, Sioux City",
-    "photo_credit": "IJF99, CC BY-SA 4.0, via Wikimedia Commons (cropped)",
+    "photo": "_src/postcards/siouxland/ai-festival.jpg",
+    "photo_position": "center",
+    "photo_tag": "",
+    "photo_credit": "",
     "to": {
       "name": "Stacie Anderson",
       "company": "Explore Siouxland",
