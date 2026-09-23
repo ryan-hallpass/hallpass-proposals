@@ -1,0 +1,58 @@
+{
+  "slug": "siouxland",
+  "variant": "tourism",
+  "city_name": "Siouxland",
+  "city_full": "Explore Siouxland",
+  "prepared_for": "Explore Siouxland",
+  "prepared_date": "September 2026",
+  "contact_name": "Stacie Anderson",
+  "hero": {
+    "headline": "Three states. One story worth *visiting.*",
+    "lead": "Sioux City just approved a year of new funding for Explore Siouxland to promote the region to tourists, conventions, and sports events. Hallpass can help turn that investment into stories people see, share, and plan a trip around.",
+    "photo": { "src": "https://exploresiouxland.com/wp-content/uploads/2024/03/IMG_4871-2-scaled.jpg", "alt": "A crowd watching a nighttime outdoor concert under stage lights in Sioux City" },
+    "photo_tag": "Sioux City, Iowa"
+  },
+  "concepts": {
+    "headline": "Make Siouxland worth the *trip.*",
+    "lead": "A connected editorial system, not one-off posts, could give weekend visitors, tournament families, and meeting planners multiple ways into the same Siouxland story.",
+    "series": [
+      { "label": "Illustrative series · Short-form video", "title": "Tournament Weekend",
+        "description": "Sports weekends told from the bleachers: the families who travel in, where they eat, and why they book again next year.",
+        "photo": { "src": "https://exploresiouxland.com/wp-content/uploads/2026/07/2T2A2802.jpg", "alt": "A packed indoor volleyball tournament with dozens of courts and spectators in Sioux City" } },
+      { "label": "Illustrative series · Outdoor getaways", "title": "Loess Hills Mornings",
+        "description": "Short trail-to-table itineraries across Iowa, Nebraska, and South Dakota, built for the drive-in weekend visitor.",
+        "photo": { "src": "https://exploresiouxland.com/wp-content/uploads/2024/06/itinerary-5-scaled.jpg", "alt": "A hiker walking a grassy ridge trail through the Loess Hills near Sioux City" } }
+    ],
+    "social": { "account": "Explore Siouxland", "location": "Sioux City, Iowa", "handle": "explore_siouxland", "caption": "Fourth Street after dark.",
+      "photo": { "src": "https://exploresiouxland.com/wp-content/uploads/2024/02/Homepage_Hero-2.jpg", "alt": "String lights over Historic Fourth Street in downtown Sioux City at dusk" } }
+  },
+  "plan": {
+    "quote": "We work to *showcase our communities* for visitors and residents as they explore everything Siouxland has to offer.",
+    "quote_source": "Explore Siouxland mission statement",
+    "outside_help_heading": "Year one is the proof year.",
+    "outside_help_quote": "On September 21, the Sioux City Council approved one year of funding, nearly $400,000, to promote Sioux City as a destination for tourists, conventions, and sports events. Council members asked about results. A year from now, the stories and the numbers should answer that question."
+  },
+  "pov": {
+    "people_line": "We start with people: the musician playing a downtown stage, the family behind a Fourth Street restaurant, the volunteers who make tournament weekend run.",
+    "photo": { "src": "https://exploresiouxland.com/wp-content/uploads/2023/08/364756564_253288540812680_8612421129413745522_n.jpg", "alt": "A musician with long hair playing an acoustic guitar on a small stage in Sioux City" },
+    "caption": "Live music, Sioux City"
+  },
+  "scale_target": "",
+  "report": {
+    "title_line1": "Explore Siouxland",
+    "pillars": "Tourism, conventions, sports events, and partner impact"
+  },
+  "journey": {
+    "audiences": "weekend visitors, tournament families, and meeting planners",
+    "step1": "More people seeing Siouxland",
+    "step3": "More booked stays and event leads"
+  },
+  "deliverables": {
+    "launch": ["Visibility baseline across all channels", "Year-one KPIs the council can track", "Content plan for events, sports, and meetings"],
+    "monthly": ["Always-on social and short-form video", "Tournament and event-weekend stories", "Paid campaigns for drive-in visitors (ad spend billed separately)", "Partner spotlights with hotels, restaurants, and venues"]
+  },
+  "footer": {
+    "sources_html": "<a href=\"https://www.kwit.org/podcast/spm-news/2026-09-22/sioux-city-council-votes-to-fund-391k-towards-explore-siouxland-for-tourism-expansion\" target=\"_blank\" rel=\"noopener noreferrer\">KWIT, Sept. 22, 2026</a>; <a href=\"https://exploresiouxland.com/about/\" target=\"_blank\" rel=\"noopener noreferrer\">Explore Siouxland mission statement</a>.",
+    "photo_credits_html": "All photos courtesy of <a href=\"https://exploresiouxland.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Explore Siouxland</a>; hero photo by Britton Hacke Photography."
+  }
+}

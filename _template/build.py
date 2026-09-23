@@ -21,6 +21,46 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/128 Safari/537.36"
 
+
+# Copy that changes by buyer type. A city JSON picks one with "variant" and can
+# override any single string with a "copy" object.
+VARIANTS = {
+    "ed": {
+        "concept": "place-marketing concept",
+        "concept_title": "Place Marketing Concept",
+        "plan_eyebrow": "Your plan says",
+        "plan_lead": "The strategic direction is already set. The next step is a publishing system that gives that direction a recognizable voice, a steady cadence, and measurable reach.",
+        "team": "economic development teams",
+        "report_to": "reporting it internally",
+        "step2_title": "Make {city} easier to evaluate",
+        "step2_body": "Sector collateral, RFI-ready materials, and site-visit support answer the next questions.",
+        "step3_body": "Turn qualified interest into direct economic-development conversations.",
+        "signal_body": "A twelve-month program that turns {city}’s adopted strategy into steady publishing and board-ready reporting.",
+        "cta": "Let’s put {city}’s story to work for its economic goals.",
+        "cta_note": "Let’s spend 30 minutes on the plan, the near-term opportunity, and what a focused first phase could look like.",
+        "footer": "Economic development & place marketing.",
+        "report_row3": "Connection to the plan",
+        "priorities": "the plan’s priorities",
+    },
+    "tourism": {
+        "concept": "destination-marketing concept",
+        "concept_title": "Destination Marketing Concept",
+        "plan_eyebrow": "The opportunity",
+        "plan_lead": "The investment is in place. The next step is a publishing system that turns it into visits, stays, and results your board and funders can see.",
+        "team": "tourism teams",
+        "report_to": "reporting it to the board and funders",
+        "step2_title": "Make the trip easy to plan",
+        "step2_body": "Itineraries, event pages, and partner offers answer the next question before a visitor asks it.",
+        "step3_body": "Turn interest into booked stays, tournament bids, and meeting leads.",
+        "signal_body": "A twelve-month program that turns {city}’s tourism investment into steady publishing and funder-ready reporting.",
+        "cta": "Let’s fill {city}’s calendar.",
+        "cta_note": "Let’s spend 30 minutes on your year-one goals, the events ahead, and what a focused first phase could look like.",
+        "footer": "Destination & place marketing.",
+        "report_row3": "Connection to your goals",
+        "priorities": "your year-one priorities",
+    },
+}
+
 def em(s):      # *word* -> orange emphasis
     return Markup(re.sub(r"\*(.+?)\*", r"<em>\1</em>", str(escape(s or ""))))
 def strong(s):  # *pillars* -> teal bold inside the plan quote
@@ -93,6 +133,9 @@ def main():
     d["pov"]["photo"]["src"] = fetch_photo(d["pov"]["photo"], slug, "pov")
     env = Environment(loader=FileSystemLoader(HERE), autoescape=select_autoescape(["html"]), undefined=ChainableUndefined)
     env.filters.update(em=em, strong=strong, fine=fine, plain=plain)
+    copy = dict(VARIANTS[d.get("variant", "ed")]); copy.update(d.get("copy") or {})
+    d["copy"] = {k: v.replace("{city}", d["city_name"]) for k, v in copy.items()}
+    d.setdefault("prepared_for", "the " + d["city_full"])
     out = env.get_template("template.html").render(**d)
     os.makedirs(os.path.join(ROOT, slug), exist_ok=True)
     open(os.path.join(ROOT, slug, "index.html"), "w").write(out)

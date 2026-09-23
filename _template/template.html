@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>{{ city_name }} — Place Marketing Concept | Hallpass</title>
-  <meta name="description" content="A place-marketing concept prepared for the {{ city_full }} by Hallpass Digital." />
+  <title>{{ city_name }} — {{ copy.concept_title }} | Hallpass</title>
+  <meta name="description" content="A {{ copy.concept }} prepared for {{ prepared_for }} by Hallpass Digital." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ hero.headline | plain }}" />
-  <meta property="og:description" content="A place-marketing concept prepared for the {{ city_full }} by Hallpass Digital." />
+  <meta property="og:description" content="A {{ copy.concept }} prepared for {{ prepared_for }} by Hallpass Digital." />
   <meta property="og:url" content="https://proposals.hallpassdigital.com/{{ slug }}" />
   <meta property="og:image" content="https://proposals.hallpassdigital.com/{{ slug }}/assets/og.jpg" />
   <meta property="og:image:width" content="1200" />
@@ -457,13 +457,13 @@
         <div class="hero-meta">
           <a class="header-logo" href="#top" aria-label="Hallpass — back to top"><img src="/assets/hallpass-logo.png" alt="Hallpass" width="1235" height="395" /></a>
           <div class="hero-meta-copy">
-            <span>Prepared for the {{ city_full }}</span>
+            <span>Prepared for {{ prepared_for }}</span>
             <span>{{ prepared_date }}</span>
           </div>
         </div>
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">A place-marketing concept</p>
+            <p class="eyebrow">A {{ copy.concept }}</p>
             <h1>{{ hero.headline | em }}</h1>
             <p class="lead">{{ hero.lead }}</p>
             <div class="hero-actions">
@@ -556,8 +556,8 @@
     <section class="plan" aria-labelledby="plan-heading">
       <div class="shell plan-grid">
         <div>
-          <p class="eyebrow"><span class="section-no">02</span>Your plan says</p>
-          <p class="lead">{{ plan.lead | default("The strategic direction is already set. The next step is a publishing system that gives that direction a recognizable voice, a steady cadence, and measurable reach.") }}</p>
+          <p class="eyebrow"><span class="section-no">02</span>{{ plan.eyebrow | default(copy.plan_eyebrow) }}</p>
+          <p class="lead">{{ plan.lead | default(copy.plan_lead) }}</p>
         </div>
         <div>
           <h2 id="plan-heading" class="quote">“{{ plan.quote | strong }}”</h2>
@@ -625,6 +625,7 @@
           <p>Stories from Ardmore Means More. Each one starts with a local place and the people who give it meaning.</p>
         </div>
         <div class="reels" id="reels">
+{% set airpark_reel %}
           <article class="reel" data-platform="facebook" data-permalink="https://www.facebook.com/reel/3089098644764980/" data-title="1,000+ acres, ready to build">
             <div class="reel-frame"></div>
             <div class="reel-caption">
@@ -633,6 +634,7 @@
               <small>Ardmore’s industrial airpark, pitched to site selectors in under a minute: location, rail, runway, and room to grow.</small>
             </div>
           </article>
+          {% endset %}{% if variant != "tourism" %}{{ airpark_reel }}{% endif %}
           <article class="reel" data-platform="instagram" data-permalink="https://www.instagram.com/reel/DWESx-akYF0/" data-title="More than a stop on the map">
             <div class="reel-frame"></div>
             <div class="reel-caption">
@@ -649,6 +651,7 @@
               <small>The family behind Café Alley, The Commodore, and The Dew Drop Inn.</small>
             </div>
           </article>
+          {% if variant == "tourism" %}{{ airpark_reel }}{% endif %}
         </div>
 
         <figure class="testimonial">
@@ -677,7 +680,7 @@
           </div>
           <div class="report-row"><b>01</b><div><strong>Outcome summary</strong><small>Reach, audience growth, engagement, and earned coverage</small></div><em>Measured</em></div>
           <div class="report-row"><b>02</b><div><strong>What earned attention</strong><small>Top stories, formats, themes, and audience signals</small></div><em>Interpreted</em></div>
-          <div class="report-row"><b>03</b><div><strong>Connection to the plan</strong><small>{{ report.pillars }}</small></div><em>Aligned</em></div>
+          <div class="report-row"><b>03</b><div><strong>{{ copy.report_row3 }}</strong><small>{{ report.pillars }}</small></div><em>Aligned</em></div>
           <div class="report-row"><b>04</b><div><strong>Next-quarter priorities</strong><small>Editorial calendar, optimization, and opportunities</small></div><em>Actionable</em></div>
           <div class="report-foot"><span>One source of truth</span><span>Monthly tracking · Quarterly narrative</span></div>
         </div>
@@ -692,7 +695,7 @@
             <p class="eyebrow"><span class="section-no">05</span>Capabilities at a glance</p>
             <h2 id="work-heading">One partner from strategy to steady output.</h2>
           </div>
-          <p>We connect the plan, the story, and the publishing rhythm—so economic development teams get more than a campaign launch. They get a durable system for showing progress in public and reporting it internally.</p>
+          <p>We connect the plan, the story, and the publishing rhythm—so {{ copy.team }} get more than a campaign launch. They get a durable system for showing progress in public and {{ copy.report_to }}.</p>
         </div>
         <div class="capabilities" aria-label="Hallpass capabilities">
           <article class="capability"><span class="num">01</span><h3>Brand strategy &amp; messaging</h3><p>Positioning, narrative, and voice.</p></article>
@@ -714,8 +717,8 @@
           </div>
           <div class="journey-steps">
             <div class="journey-step"><span>01 · First impression</span><strong>{{ journey.step1 }}</strong><p>Earn attention with stories people choose to watch.</p></div>
-            <div class="journey-step"><span>02 · Consideration</span><strong>Make {{ city_name }} easier to evaluate</strong><p>Sector collateral, RFI-ready materials, and site-visit support answer the next questions.</p></div>
-            <div class="journey-step"><span>03 · Conversion</span><strong>{{ journey.step3 }}</strong><p>Turn qualified interest into direct economic-development conversations.</p></div>
+            <div class="journey-step"><span>02 · Consideration</span><strong>{{ copy.step2_title }}</strong><p>{{ copy.step2_body }}</p></div>
+            <div class="journey-step"><span>03 · Conversion</span><strong>{{ journey.step3 }}</strong><p>{{ copy.step3_body }}</p></div>
           </div>
           <p class="journey-close">Every top-of-funnel number ladders to the bottom-of-funnel outcome {{ city_name }} actually wants.</p>
         </div>
@@ -732,10 +735,10 @@
                 <div class="price-tier">
                   <span class="price-label">Then continue with The Signal</span>
                   <strong>$9,500 <span>/ month</span></strong>
-                  <p>A twelve-month program that turns {{ city_name }}’s adopted strategy into steady publishing and board-ready reporting.</p>
+                  <p>{{ copy.signal_body }}</p>
                 </div>
               </div>
-              <p class="price-flex">Scope and investment are shaped around your budget and the plan’s priorities.</p>
+              <p class="price-flex">Scope and investment are shaped around your budget and {{ copy.priorities }}.</p>
             </div>
             <span class="partnership-term">Illustrative 12-month view</span>
           </div>
@@ -771,17 +774,17 @@
     <section class="cta" aria-labelledby="cta-heading">
       <div class="shell">
         <p class="eyebrow">A practical next conversation</p>
-        <h2 id="cta-heading">{{ cta_headline | default("Let’s put " ~ city_name ~ "’s story to work for its economic goals.") }}</h2>
-        <p>Let’s spend 30 minutes on the plan, the near-term opportunity, and what a focused first phase could look like.</p>
+        <h2 id="cta-heading">{{ cta_headline | default(copy.cta) }}</h2>
+        <p>{{ copy.cta_note }}</p>
         <a class="button" href="{{ booking_url }}" target="_blank" rel="noopener noreferrer" data-cta="closing">Book a 30-minute call</a>
-        <p class="note">30 minutes · No preparation needed · Or email <a href="mailto:ryan@hallpassdigital.com?subject={{ (city_name ~ ' place-marketing concept') | urlencode }}">ryan@hallpassdigital.com</a></p>
+        <p class="note">30 minutes · No preparation needed · Or email <a href="mailto:ryan@hallpassdigital.com?subject={{ (city_name ~ ' ' ~ copy.concept) | urlencode }}">ryan@hallpassdigital.com</a></p>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="shell footer-grid">
-      <div class="footer-brand"><img class="footer-logo" src="/assets/hallpass-logo.png" alt="Hallpass" width="1235" height="395" /><span class="note">Economic development &amp; place marketing.</span></div>
+      <div class="footer-brand"><img class="footer-logo" src="/assets/hallpass-logo.png" alt="Hallpass" width="1235" height="395" /><span class="note">{{ copy.footer }}</span></div>
       <div class="sources">
         <div>Sources: {{ footer.sources_html | safe }} Ardmore results reported by the Ardmore Development Authority, August 2026.</div>
         <div>Photography: {{ footer.photo_credits_html | safe }} Client logos are trademarks of their respective owners.</div>
