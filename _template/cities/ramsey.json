@@ -45,6 +45,18 @@
         "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/c0khhfas/in-the-game-pickleball-nov-2025.jpg?width=2000&format=jpg",
         "alt": "Players on indoor pickleball courts at In the Game Pickleball & Golf in Ramsey"
       }
+    },
+    "reel": {
+      "handle": "tellramseysstory",
+      "avatar": "R",
+      "hook": "Why we picked Ramsey\nover the rest of the metro",
+      "subtitle": "“Room to grow, and neighbors who actually show up.”",
+      "caption": "New neighbors, in their own words.",
+      "photo": {
+        "src": "_src/ramsey/reel-ai.jpg",
+        "alt": "Illustrative interview with a new Ramsey resident",
+        "position": "center"
+      }
     }
   },
   "plan": {
