@@ -24,13 +24,16 @@ def main():
     url = f"https://proposals.hallpassdigital.com/{slug}?ref=postcard"
     img = qrcode.make(url, box_size=20, border=1, error_correction=qrcode.constants.ERROR_CORRECT_M)
     buf = io.BytesIO(); img.save(buf, format="PNG")
-    hero = d["hero"]["photo"]["src"]
-    if not hero.startswith("/"): hero = f"/{slug}/assets/hero.jpg"
+    pc = d.get("postcard") or {}
+    # Postcards are printed and mailed, so they need a photo licensed for commercial use
+    # (CC BY / CC BY-SA / CC0 / public domain). Falls back to the web hero for proofs only.
+    hero = pc.get("photo") or d["hero"]["photo"]["src"]
+    if not hero.startswith("/") and not pc.get("photo"): hero = f"/{slug}/assets/hero.jpg"
     font = os.path.join(ROOT, "_template", "postcard", "archivo.woff2")
     env = Environment(loader=FileSystemLoader(HERE), autoescape=True); env.filters["em"] = em
     out = env.get_template("postcard.html").render(
         slug=slug, city_name=d["city_name"], city_full=d["city_full"], headline=d["hero"]["headline"],
-        photo_tag=d["hero"]["photo_tag"], contact_first=(d.get("contact_name") or "").split(" ")[0],
+        photo_tag=pc.get("photo_tag") or d["hero"]["photo_tag"], photo_pos=pc.get("photo_position", "center"), photo_credit=pc.get("photo_credit", ""), contact_first=(d.get("contact_name") or "").split(" ")[0],
         hero_url=file_url(hero), logo_url=file_url("/assets/hallpass-logo.png"),
         font_url="file://" + font, qr_data="data:image/png;base64," + base64.b64encode(buf.getvalue()).decode())
     od = os.path.join(ROOT, "_src", "postcards", slug); os.makedirs(od, exist_ok=True)

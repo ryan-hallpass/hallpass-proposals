@@ -7,3 +7,4 @@ Claude outputs/
 .DS_Store
 # downloaded copy of hallpassdigital.com (separate site)
 _src/hallpassdigital-site/
+_src/postcards/*/cc/

@@ -7,22 +7,45 @@
   "hero": {
     "headline": "Davis is built for what’s next. Let’s make that story *visible.*",
     "lead": "Your new economic development plan names the opportunity clearly: position Davis as a premier destination for innovation, entrepreneurship, and high-quality living. Hallpass can help turn that ambition into a story people see, remember, and act on.",
-    "photo": { "src": "davis/assets/hero-davis-central-park.jpg", "alt": "People walking past the Davis Farmers Market pavilion in Central Park on a sunny day" },
+    "photo": {
+      "src": "davis/assets/hero-davis-central-park.jpg",
+      "alt": "People walking past the Davis Farmers Market pavilion in Central Park on a sunny day"
+    },
     "photo_tag": "Davis, California"
   },
   "concepts": {
     "headline": "Make Davis’s advantages *tangible.*",
     "lead": "A connected editorial system—not one-off posts—could give investors, founders, talent, and visitors multiple ways into the same Davis story.",
     "series": [
-      { "label": "Illustrative series · Short-form video", "title": "Made Possible in Davis",
+      {
+        "label": "Illustrative series · Short-form video",
+        "title": "Made Possible in Davis",
         "description": "Fast, human stories connecting university research to founders, local companies, and the ideas moving from lab to market.",
-        "photo": { "src": "davis/assets/ucdavis-watertower.jpg", "alt": "UC Davis campus water tower and landscape" } },
-      { "label": "Illustrative series · Quality of life", "title": "The Davis Daily",
+        "photo": {
+          "src": "davis/assets/ucdavis-watertower.jpg",
+          "alt": "UC Davis campus water tower and landscape"
+        }
+      },
+      {
+        "label": "Illustrative series · Quality of life",
+        "title": "The Davis Daily",
         "description": "A recurring look at the small, lived details that make high-quality living credible—not just a claim.",
-        "photo": { "src": "davis/assets/ucdavis-egghead.jpg", "alt": "An Egghead sculpture in front of Mrak Hall beneath mature cork oak trees at UC Davis" } }
+        "photo": {
+          "src": "davis/assets/ucdavis-egghead.jpg",
+          "alt": "An Egghead sculpture in front of Mrak Hall beneath mature cork oak trees at UC Davis"
+        }
+      }
     ],
-    "social": { "account": "Elevate Davis", "location": "Davis, California", "handle": "elevatedavis", "caption": "Big ideas. Bike-sized commute.",
-      "photo": { "src": "davis/assets/ucdavis-bikes.jpg", "alt": "A cyclist riding past rows of bicycles on the UC Davis campus" } }
+    "social": {
+      "account": "Elevate Davis",
+      "location": "Davis, California",
+      "handle": "elevatedavis",
+      "caption": "Big ideas. Bike-sized commute.",
+      "photo": {
+        "src": "davis/assets/ucdavis-bikes.jpg",
+        "alt": "A cyclist riding past rows of bicycles on the UC Davis campus"
+      }
+    }
   },
   "plan": {
     "quote": "Develop a unified branding and marketing initiative that positions Davis as a premier destination for *innovation, entrepreneurship, and high-quality living.*",
@@ -32,7 +55,10 @@
   },
   "pov": {
     "people_line": "We start with people: the founder building in Davis, the shop that’s anchored downtown for decades, the UC Davis researcher whose work could change the world.",
-    "photo": { "src": "davis/assets/davis-coffee.jpg", "alt": "A barista smiles while handing a latte across the counter at the UC Davis Coffee Center" },
+    "photo": {
+      "src": "davis/assets/davis-coffee.jpg",
+      "alt": "A barista smiles while handing a latte across the counter at the UC Davis Coffee Center"
+    },
     "caption": "UC Davis Coffee Center"
   },
   "scale_target": "25,000+ impressions a year",
@@ -46,12 +72,27 @@
     "step3": "20+ annual attraction inquiries"
   },
   "deliverables": {
-    "launch": ["Visibility baseline and stakeholder input", "“Elevate Davis” messaging and voice", "KPIs tied to the plan’s targets"],
-    "monthly": ["Always-on social and short-form video", "Stories on business, talent, and quality of life", "Paid campaigns for site selectors and talent (ad spend billed separately)", "Shop Local and events email with the Chamber and DDBA"]
+    "launch": [
+      "Visibility baseline and stakeholder input",
+      "“Elevate Davis” messaging and voice",
+      "KPIs tied to the plan’s targets"
+    ],
+    "monthly": [
+      "Always-on social and short-form video",
+      "Stories on business, talent, and quality of life",
+      "Paid campaigns for site selectors and talent (ad spend billed separately)",
+      "Shop Local and events email with the Chamber and DDBA"
+    ]
   },
   "cta_headline": "Let’s put Davis’s story to work for its economic goals.",
   "footer": {
     "sources_html": "<a href=\"https://documents.cityofdavis.org/Media/Default/Documents/PDF/CityCouncil/CouncilMeetings/Agendas/2026/2026-03-03/05-Economic-Development-Strategic-Plan.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">City of Davis Economic Development Strategic Plan &amp; staff report</a>.",
     "photo_credits_html": "hero, Davis Farmers Market in Central Park, courtesy of <a href=\"https://visityolo.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit Yolo</a>. Point-of-view photo: UC Davis Coffee Center, courtesy of <a href=\"https://engineering.ucdavis.edu/\" target=\"_blank\" rel=\"noopener noreferrer\">UC Davis College of Engineering</a>. Concept images: <a href=\"https://arboretum.ucdavis.edu/photo-galleries\" target=\"_blank\" rel=\"noopener noreferrer\">UC Davis Arboretum and Public Garden</a>, <a href=\"https://www.ucdavis.edu/about\" target=\"_blank\" rel=\"noopener noreferrer\">UC Davis</a>, the <a href=\"https://www.ucdavis.edu/photo-galleries/picture-uc-davis-redux\" target=\"_blank\" rel=\"noopener noreferrer\">UC Davis photo gallery</a>, and <a href=\"http://2019.middleware-conference.org\" target=\"_blank\" rel=\"noopener noreferrer\">Middleware 2019 at UC Davis</a>."
+  },
+  "postcard": {
+    "photo": "_src/postcards/davis/postcard-hero.jpg",
+    "photo_position": "62% center",
+    "photo_tag": "UC Davis, California",
+    "photo_credit": "Cody Duty / UC Davis College of Engineering, CC BY 2.0, via Wikimedia Commons (cropped)"
   }
 }

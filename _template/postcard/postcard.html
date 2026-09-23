@@ -37,6 +37,7 @@
   .back .stat b { display: block; color: var(--gold); font-size: 17pt; font-weight: 800; letter-spacing: -.03em; }
   .back .offer { font-size: 10.5pt; line-height: 1.4; border-left: 3px solid var(--gold); padding-left: .14in; }
   .back .offer b { display:block; font-size: 12pt; }
+  .back .credit { font-size: 6.5pt; color: var(--muted); margin-top: -.1in; }
   .back .sig { font-size: 10pt; color: var(--muted); }
   .back .sig b { color: var(--ink); }
   .back .rule { position: absolute; top: .5in; bottom: .5in; left: 6.75in; border-left: 1px solid var(--line); }
@@ -45,7 +46,7 @@
 </style></head><body>
 
 <section class="side front">
-  <div class="photo" style="background-image:url('{{ hero_url }}')"></div>
+  <div class="photo" style="background-image:url('{{ hero_url }}');background-position:{{ photo_pos }}"></div>
   <div class="tag">{{ photo_tag }}</div>
   <div class="copy">
     <img class="logo" src="{{ logo_url }}" alt="Hallpass">
@@ -70,6 +71,7 @@
       <div class="qrtext"><strong>Scan to see your page.</strong>Or visit proposals.hallpassdigital.com/{{ slug }}</div>
     </div>
     <p class="sig"><b>Ryan McNeill</b> · Hallpass · ryan@hallpassdigital.com</p>
+    {% if photo_credit %}<p class="credit">Front photo: {{ photo_credit }}</p>{% endif %}
   </div>
 </section>
 </body></html>
