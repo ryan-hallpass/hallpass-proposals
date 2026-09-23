@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Clayton — Place Marketing Concept | Hallpass</title>
+  <meta name="description" content="A place-marketing concept prepared for the Town of Clayton by Hallpass Digital." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Clayton is growing fast. Let’s make its story clear." />
+  <meta property="og:description" content="A place-marketing concept prepared for the Town of Clayton by Hallpass Digital." />
+  <meta property="og:url" content="https://proposals.hallpassdigital.com/clayton" />
+  <meta property="og:image" content="https://proposals.hallpassdigital.com/clayton/assets/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* ---------- Hallpass brand tokens (matched to hallpassdigital.com) ---------- */
+    :root {
+      --cream: #f8efd9;
+      --cream-2: #fff6e2;
+      --surface: #fffaf0;
+      --ink: #223c3a;
+      --ink-deep: #1a302e;
+      --muted: #56615d;
+      --line: #dccfb0;
+      --tan: #cdbd9b;
+      --teal: #216d7a;
+      --sage: #bed4c0;
+      --gold: #f4bb35;
+      --gold-soft: #fff2ce;
+      --ember: #e85427;
+      --shadow: 0 22px 55px rgba(34, 60, 58, .13);
+      --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+      --grid: linear-gradient(rgba(34,60,58,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(34,60,58,.055) 1px, transparent 1px);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; width: 100%; }
+    a { color: inherit; }
+    .shell { width: min(1180px, calc(100% - 44px)); margin: 0 auto; }
+    .gridded { background-image: var(--grid); background-size: 44px 44px; }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--ink);
+      font-size: .74rem;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; flex: 0 0 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--ember); }
+    .eyebrow.plain::before { display: none; }
+    .section-no {
+      display: inline-grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      border: 1px solid var(--tan);
+      border-radius: 50%;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+    .eyebrow:has(.section-no)::before { display: none; }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2 { font-weight: 700; color: var(--ink); }
+    h1 {
+      max-width: 760px;
+      margin-bottom: 26px;
+      font-size: clamp(2.9rem, 6.4vw, 5.6rem);
+      line-height: .98;
+      letter-spacing: -.045em;
+    }
+    h2 {
+      max-width: 760px;
+      margin-bottom: 22px;
+      font-size: clamp(2.1rem, 4.4vw, 3.9rem);
+      line-height: 1.02;
+      letter-spacing: -.04em;
+    }
+    h1 em, h2 em { font-style: normal; color: var(--ember); }
+    h3 { font-size: 1.05rem; line-height: 1.3; }
+    .lead { max-width: 640px; color: var(--muted); font-size: clamp(1.05rem, 1.5vw, 1.22rem); line-height: 1.62; }
+    .note { color: var(--muted); font-size: .8rem; }
+
+    /* ---------- Hero ---------- */
+    .hero { padding: 30px 0 64px; }
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 0 0 24px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .74rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .header-logo { display: block; flex: 0 0 auto; width: 128px; }
+    .header-logo img { width: 100%; height: auto; }
+    .hero-meta-copy { display: flex; align-items: center; gap: clamp(20px, 4vw, 54px); }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(300px, .88fr);
+      gap: clamp(36px, 6vw, 80px);
+      align-items: center;
+      padding-top: 64px;
+    }
+    .hero-photo {
+      position: relative;
+      margin: 0;
+      aspect-ratio: 4 / 4.4;
+      overflow: hidden;
+      border-radius: 4px 4px 72px 4px;
+      box-shadow: var(--shadow);
+      background: var(--ink);
+    }
+    .hero-photo img { height: 100%; object-fit: cover; object-position: 52% 50%; }
+    .hero-photo figcaption {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 14px 20px;
+      background: var(--gold);
+      color: var(--ink);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 30px; }
+    .hero-marker { display: flex; gap: 14px; align-items: center; color: var(--muted); font-size: .88rem; }
+    .hero-marker::before { content: ""; width: 36px; height: 2px; background: var(--ember); }
+
+    /* ---------- Trust strip (social proof above the fold) ---------- */
+    .trust { padding: 0 0 72px; }
+    .trust-card { background: var(--surface); border: 1px solid var(--line); }
+    .trust-stats { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .trust-stat { padding: 26px 26px 24px; }
+    .trust-stat + .trust-stat { border-left: 1px solid var(--line); }
+    .trust-stat strong { display: block; margin-bottom: 6px; font-size: clamp(2rem, 3.4vw, 2.9rem); font-weight: 800; line-height: 1; letter-spacing: -.045em; color: var(--ink); }
+    .trust-stat strong.word { font-size: clamp(1.25rem, 1.9vw, 1.55rem); letter-spacing: -.02em; line-height: 1.1; padding-top: 6px; }
+    .trust-stat span { display: block; color: var(--muted); font-size: .84rem; line-height: 1.42; }
+    .trust-stat span i { font-style: italic; }
+    .trust-logos { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 28px; padding: 22px 26px; border-top: 1px solid var(--line); }
+    .trust-logos > p { margin: 0; color: var(--muted); font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; white-space: nowrap; }
+    .logo-row { display: flex; align-items: center; justify-content: space-between; gap: clamp(18px, 3vw, 40px); flex-wrap: wrap; }
+    .logo-row img { width: auto; height: 44px; max-width: 170px; object-fit: contain; filter: grayscale(1) contrast(1.05); opacity: .78; mix-blend-mode: multiply; }
+    .logo-row img.tall { height: 58px; }
+    .logo-row img.wide { height: 34px; }
+    .trust-label { margin-bottom: 14px; }
+
+    /* ---------- Point of view ---------- */
+    section { padding: 100px 0; border-top: 1px solid var(--line); }
+    .manifesto { padding: 72px 0 76px; border-top: 0; background: var(--gold-soft); }
+    .manifesto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(38px, 6vw, 88px); align-items: center; }
+    .manifesto h2 { margin-bottom: 26px; }
+    .manifesto-photo { position: relative; margin: 0; aspect-ratio: 4 / 3.6; overflow: hidden; border-radius: 4px 72px 4px 4px; box-shadow: var(--shadow); background: var(--ink); }
+    .manifesto-photo img { height: 100%; object-fit: cover; object-position: 62% 50%; }
+    .manifesto-photo figcaption { position: absolute; left: 0; bottom: 0; padding: 12px 18px; background: var(--ink); color: var(--cream-2); font-size: .66rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .manifesto h2 { max-width: 540px; }
+    .manifesto-copy { display: grid; gap: 14px; padding-top: 4px; }
+    .manifesto-copy p { max-width: 610px; margin: 0; font-size: 1.03rem; line-height: 1.58; }
+    .manifesto-copy p:first-child { font-size: clamp(1.15rem, 1.7vw, 1.32rem); line-height: 1.48; }
+    .manifesto-close { padding-top: 14px; border-top: 1px solid rgba(34,60,58,.25); font-weight: 700; }
+
+    /* ---------- Plan ---------- */
+    .plan { background: var(--surface); }
+    .plan-grid { display: grid; grid-template-columns: .65fr 1.35fr; gap: clamp(38px, 8vw, 118px); align-items: start; }
+    .quote { margin: 0; font-size: clamp(1.9rem, 3.6vw, 3.25rem); font-weight: 600; line-height: 1.12; letter-spacing: -.035em; }
+    .quote strong { color: var(--teal); font-weight: 700; }
+    .quote-source { margin-top: 26px; color: var(--muted); font-size: .84rem; }
+    .outside-note { margin-top: 40px; padding: 24px 28px; background: var(--gold-soft); border-left: 4px solid var(--gold); font-size: 1.02rem; }
+    .outside-note b { display: block; margin-bottom: 5px; }
+
+    /* ---------- Proof ---------- */
+    .proof { background: var(--ink); color: var(--cream-2); border-top: 0; }
+    .proof .eyebrow { color: var(--cream-2); }
+    .proof .section-no { border-color: rgba(255,246,226,.35); }
+    .proof h2 { color: var(--cream-2); }
+    .proof .note { color: #b9c7c2; }
+    .proof-layout { display: grid; grid-template-columns: .92fr 1.08fr; gap: clamp(52px, 9vw, 120px); align-items: center; }
+    .proof-story { max-width: 480px; font-size: 1.1rem; color: #e3ebe6; }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid rgba(255,255,255,.22); }
+    .stat { padding: 32px 18px 24px 0; }
+    .stat + .stat { padding-left: 32px; border-left: 1px solid rgba(255,255,255,.22); }
+    .stat strong { display: block; margin-bottom: 8px; color: var(--gold); font-size: clamp(3.4rem, 6.4vw, 6rem); font-weight: 800; line-height: .9; letter-spacing: -.055em; }
+    .stat span { display: block; max-width: 240px; font-size: .92rem; line-height: 1.45; }
+    .growth { position: relative; margin: 30px 0 0; padding: 22px 22px 16px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); }
+    .growth-title { margin-bottom: 8px; color: #e3ebe6; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .growth-plot { position: relative; }
+    .growth svg { display: block; width: 100%; height: auto; overflow: visible; font-family: var(--sans); }
+    .growth-note { margin: 10px 0 0; color: #b9c7c2; font-size: .74rem; line-height: 1.5; }
+    .growth-tip { position: absolute; pointer-events: none; transform: translate(-50%, -100%); margin-top: -12px; padding: 6px 10px; background: var(--cream-2); color: var(--ink); border-radius: 3px; font-size: .76rem; line-height: 1.35; white-space: nowrap; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+    .growth-tip b { display: block; font-size: .86rem; }
+    .scale-note { margin-top: 26px; padding: 18px 20px; background: rgba(255,255,255,.06); border-left: 3px solid var(--ember); font-size: .95rem; color: #e3ebe6; }
+    .scale-note b { color: #fff; }
+
+    .reels-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin: 84px 0 26px; padding-top: 34px; border-top: 1px solid rgba(255,255,255,.18); }
+    .reels-head h3 { margin: 0; font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 700; letter-spacing: -.03em; }
+    .reels-head p { margin: 0; max-width: 420px; color: #c9d5d0; font-size: .9rem; }
+    .reels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
+    .reel { display: flex; flex-direction: column; min-width: 0; }
+    .reel-frame { position: relative; overflow: hidden; background: var(--cream-2); border-radius: 4px; min-height: 420px; }
+    .reel-frame .instagram-media { margin: 0 !important; min-width: 0 !important; width: 100% !important; max-width: 100% !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+    .reel-fallback {
+      display: flex; flex-direction: column; justify-content: space-between;
+      min-height: 420px; padding: 24px; color: var(--ink); text-decoration: none;
+      background: var(--gold-soft) var(--grid); background-size: 32px 32px;
+    }
+    .reel-fallback .play { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--ember); color: #fff; font-size: 1.4rem; }
+    .reel-fallback strong { display: block; font-size: 1.5rem; line-height: 1.08; letter-spacing: -.03em; }
+    .reel-fallback span { font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+    .reel-frame.is-fb { min-height: 0; aspect-ratio: 9 / 16; background: #000; }
+    .reel-frame.is-fb iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .reel-frame.is-card { min-height: 0; aspect-ratio: 9 / 16; }
+    .reel-frame.is-card .reel-fallback { height: 100%; min-height: 0; transition: background-color .2s ease; }
+    .reel-frame.is-card .reel-fallback:hover { background-color: #fff; }
+    .reel-frame.is-card .reel-fallback:hover .play { transform: scale(1.06); }
+    .reel-fallback .play { transition: transform .2s ease; }
+    .reel-caption { padding: 14px 2px 0; }
+    .reel-caption b { display: block; font-size: 1rem; }
+    .reel-caption small { display: block; color: #c9d5d0; font-size: .84rem; line-height: 1.45; }
+    .reel-caption .views { display: inline-block; margin-bottom: 6px; color: var(--gold); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .reel-caption a { color: var(--gold); font-size: .82rem; font-weight: 600; text-underline-offset: 3px; }
+
+    .testimonial { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: center; margin-top: 72px; padding: clamp(26px, 4vw, 44px); background: var(--cream-2); color: var(--ink); border-radius: 4px 4px 56px 4px; }
+    .testimonial img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; }
+    .testimonial blockquote { margin: 0 0 14px; font-size: clamp(1.35rem, 2.4vw, 2rem); font-weight: 600; line-height: 1.22; letter-spacing: -.025em; }
+    .testimonial blockquote::before { content: "“"; color: var(--ember); }
+    .testimonial blockquote::after { content: "”"; color: var(--ember); }
+    .testimonial cite { font-style: normal; font-size: .9rem; color: var(--muted); }
+    .testimonial cite b { color: var(--ink); }
+
+    /* ---------- Concepts ---------- */
+    .concept-intro { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 44px; }
+    .concept-intro .lead { max-width: 430px; margin-bottom: 0; }
+    .concept-grid { display: grid; grid-template-columns: 1.15fr .85fr .85fr; gap: 18px; }
+    .concept { position: relative; min-height: 480px; overflow: hidden; background: var(--surface); border-radius: 4px; }
+    .concept img { height: 100%; object-fit: cover; position: absolute; inset: 0; }
+    .concept:first-child img { object-position: 58% center; }
+    .concept-shade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(20, 36, 34, .92), rgba(20,36,34,0) 62%); }
+    .concept-copy { position: absolute; inset: auto 26px 24px; color: #fff; }
+    .concept-copy small { display: block; margin-bottom: 8px; color: var(--gold); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .concept-copy h3 { margin: 0 0 8px; font-size: 1.3rem; letter-spacing: -.02em; }
+    .concept-copy p { margin: 0; color: #e5ebe7; font-size: .88rem; line-height: 1.5; }
+    .social-card { display: flex; flex-direction: column; min-width: 0; background: var(--surface); color: var(--ink); border: 1px solid var(--line); }
+    .social-head { display: flex; align-items: center; gap: 10px; padding: 13px 14px; }
+    .social-avatar { display: grid; place-items: center; flex: 0 0 34px; width: 34px; height: 34px; border-radius: 50%; background: var(--ink); color: var(--cream); font-size: .95rem; font-weight: 700; }
+    .social-identity { min-width: 0; line-height: 1.2; }
+    .social-identity strong { display: block; font-size: .78rem; }
+    .social-identity span { display: block; margin-top: 3px; color: var(--muted); font-size: .66rem; }
+    .social-more { margin-left: auto; color: var(--muted); font-size: 1.2rem; letter-spacing: .08em; line-height: 1; }
+    .social-image { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--ink); }
+    .social-image img { position: static; height: 100%; object-fit: cover; object-position: 56% center; }
+    .social-body { padding: 13px 14px 15px; }
+    .social-actions { display: flex; align-items: center; gap: 14px; margin-bottom: 11px; }
+    .social-actions svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .social-actions .bookmark { margin-left: auto; }
+    .social-caption { margin: 0; font-size: .84rem; line-height: 1.42; }
+    .social-caption strong { margin-right: 5px; }
+    .social-meta { display: block; margin-top: 10px; color: var(--muted); font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; }
+    .illustrative { margin-top: 18px; text-align: right; }
+
+    /* ---------- Report ---------- */
+    .report { background: var(--surface); }
+    .report-layout { display: grid; grid-template-columns: .74fr 1.26fr; gap: clamp(40px, 8vw, 110px); align-items: center; }
+    .report-sheet { padding: clamp(26px, 5vw, 54px); background: var(--cream); background-image: var(--grid); background-size: 32px 32px; box-shadow: var(--shadow); }
+    .report-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; padding-bottom: 24px; border-bottom: 2px solid var(--ink); }
+    .report-head strong { font-size: 1.3rem; line-height: 1.15; letter-spacing: -.02em; }
+    .report-head span { color: var(--muted); font-size: .72rem; text-align: right; }
+    .report-row { display: grid; grid-template-columns: 34px 1fr auto; gap: 16px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .report-row b { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--ink); color: var(--cream); font-size: .74rem; }
+    .report-row strong { display: block; margin-bottom: 2px; font-size: .92rem; }
+    .report-row small { color: var(--muted); }
+    .report-row em { color: var(--teal); font-size: .72rem; font-style: normal; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+    .report-foot { display: flex; justify-content: space-between; gap: 20px; padding-top: 22px; color: var(--muted); font-size: .76rem; }
+    .travel-line { display: flex; gap: 13px; align-items: flex-start; margin-top: 32px; font-weight: 600; }
+    .travel-line::before { content: ""; flex: 0 0 12px; width: 12px; height: 12px; margin-top: 7px; border-radius: 50%; background: var(--ember); box-shadow: 0 0 0 6px rgba(232,84,39,.15); }
+
+    /* ---------- Capabilities, journey, investment ---------- */
+    .work-intro { display: grid; grid-template-columns: .8fr 1.2fr; gap: 40px; margin-bottom: 50px; }
+    .work-intro p { max-width: 610px; color: var(--muted); font-size: 1.08rem; }
+    .capabilities { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); background: var(--surface); }
+    .capability { min-height: 128px; padding: 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .capability .num { color: var(--ember); font-size: .72rem; font-weight: 700; }
+    .capability h3 { margin: 20px 0 5px; }
+    .capability p { margin: 0; color: var(--muted); font-size: .82rem; line-height: 1.42; }
+    .journey { margin-top: 34px; padding: clamp(28px, 4vw, 46px); background: var(--ink); color: var(--cream-2); }
+    .journey-intro { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(28px, 6vw, 80px); align-items: end; margin-bottom: 30px; }
+    .journey .eyebrow { color: var(--cream-2); }
+    .journey h3 { max-width: 480px; margin: 0; font-size: clamp(2rem, 3.6vw, 3.2rem); font-weight: 700; line-height: 1.02; letter-spacing: -.04em; }
+    .journey-intro p { max-width: 570px; margin: 0; color: #dce6e1; }
+    .journey-steps { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(255,255,255,.25); border-bottom: 1px solid rgba(255,255,255,.25); }
+    .journey-step { padding: 26px 26px 24px 0; }
+    .journey-step + .journey-step { padding-left: 26px; border-left: 1px solid rgba(255,255,255,.25); }
+    .journey-step span { display: block; margin-bottom: 12px; color: var(--gold); font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .journey-step strong { display: block; margin-bottom: 8px; font-size: 1.28rem; line-height: 1.2; letter-spacing: -.02em; }
+    .journey-step p { margin: 0; color: #dce6e1; font-size: .84rem; line-height: 1.5; }
+    .journey-close { margin: 22px 0 0; font-weight: 700; }
+    .offers { margin-top: 34px; background: var(--surface); border: 1px solid var(--line); }
+    .partnership-head { display: flex; justify-content: space-between; gap: 36px; align-items: end; padding: clamp(28px, 4vw, 46px); border-bottom: 1px solid var(--line); }
+    .partnership-head .eyebrow { margin-bottom: 12px; }
+    .price-label { display: block; margin-bottom: 8px; color: var(--teal); font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .partnership-head strong { display: block; font-size: clamp(2.75rem, 5.5vw, 5rem); font-weight: 800; line-height: .92; letter-spacing: -.05em; }
+    .partnership-head strong span { font-size: .9rem; font-weight: 600; letter-spacing: 0; white-space: nowrap; }
+    .partnership-head p { max-width: 460px; margin: 12px 0 0; color: var(--muted); font-size: .93rem; }
+    .partnership-head p.price-flex { margin-top: 8px; color: var(--ink); font-weight: 600; }
+    .price-tiers { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 6px; }
+    .price-tier { padding: 18px 20px; border: 1px solid var(--line); border-radius: 4px; background: var(--cream-2); }
+    .price-tier.start { background: var(--gold-soft); border-color: var(--gold); }
+    .partnership-head .price-tier strong { font-size: clamp(2.1rem, 3.6vw, 3rem); }
+    .partnership-head .price-tier p { margin-top: 8px; font-size: .88rem; }
+    .price-tier p b { color: var(--ink); }
+    @media (max-width: 600px) { .price-tiers { grid-template-columns: 1fr; } }
+    .partnership-term { flex: 0 0 auto; padding: 10px 14px; background: var(--gold-soft); font-size: .74rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .deliverable-groups { display: grid; grid-template-columns: 1fr 1.25fr 1fr; }
+    .deliverable-group { padding: clamp(26px, 3vw, 38px); }
+    .deliverable-group + .deliverable-group { border-left: 1px solid var(--line); }
+    .deliverable-group .phase { display: block; margin-bottom: 18px; color: var(--ember); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .deliverable-group h3 { margin-bottom: 18px; font-size: 1.55rem; letter-spacing: -.03em; }
+    .deliverable-group ul { display: grid; gap: 13px; margin: 0; padding: 0; list-style: none; }
+    .deliverable-group li { position: relative; padding-left: 17px; color: var(--muted); font-size: .86rem; line-height: 1.5; }
+    .deliverable-group li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+    .deliverable-group b { color: var(--ink); font-weight: 600; }
+    .deliverable-group li { color: var(--ink); font-size: .92rem; }
+    .deliverable-group .fine { color: var(--muted); font-size: .8rem; }
+
+    /* ---------- CTA + footer ---------- */
+    .cta { border-top: 0; background: var(--gold); color: var(--ink); text-align: center; }
+    .cta .shell { max-width: 860px; }
+    .cta .eyebrow { justify-content: center; }
+    .cta .eyebrow::before { background: var(--ink); }
+    .cta h2 { margin-left: auto; margin-right: auto; }
+    .cta p { max-width: 600px; margin: 0 auto 32px; font-size: 1.08rem; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 13px;
+      min-height: 56px; padding: 0 28px;
+      background: var(--ink); color: var(--cream-2);
+      border-radius: 3px; text-decoration: none; font-weight: 700;
+      transition: background .2s ease, transform .2s ease;
+    }
+    .button:hover { background: var(--ink-deep); transform: translateY(-2px); }
+    .button:focus-visible { outline: 3px solid var(--ember); outline-offset: 4px; }
+    .button::after { content: "↗"; font-size: 1.1rem; }
+    .text-link { font-weight: 600; font-size: .92rem; text-underline-offset: 4px; }
+    .cta .note { margin-top: 16px; color: #4d4a33; font-size: .86rem; }
+    .cta .note a { font-weight: 700; }
+    footer { padding: 30px 0 42px; background: var(--ink); color: #d4dfda; }
+    .footer-grid { display: flex; justify-content: space-between; gap: 28px; align-items: flex-start; }
+    .footer-brand { flex: 0 0 auto; }
+    .footer-logo { width: 140px; height: auto; margin-bottom: 8px; filter: invert(93%) sepia(12%) saturate(390%) hue-rotate(338deg); }
+    .footer-brand .note { color: #b9c7c2; }
+    .sources { max-width: 660px; font-size: .72rem; line-height: 1.7; text-align: right; }
+    .sources a { color: var(--gold); text-underline-offset: 3px; }
+
+    @media (max-width: 900px) {
+      .hero-grid, .manifesto-grid, .plan-grid, .proof-layout, .report-layout, .work-intro { grid-template-columns: 1fr; }
+      .hero-grid { padding-top: 44px; }
+      .hero-photo { aspect-ratio: 16 / 10; }
+      .hero-photo img { object-position: 50% 60%; }
+      .trust-stats { grid-template-columns: 1fr 1fr; }
+      .trust-stat:nth-child(3) { border-left: 0; }
+      .trust-stat:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .trust-logos { grid-template-columns: 1fr; gap: 16px; }
+      .logo-row { justify-content: flex-start; }
+      .manifesto-grid { gap: 26px; }
+      .plan-grid { gap: 30px; }
+      .proof-layout { gap: 48px; }
+      .reels { grid-template-columns: 1fr 1fr; }
+      .reels-head { display: block; }
+      .reels-head p { margin-top: 8px; }
+      .concept-intro { display: block; }
+      .concept-grid { grid-template-columns: 1fr 1fr; }
+      .concept:first-child { grid-column: 1 / -1; min-height: 520px; }
+      .work-intro { gap: 0; }
+      .capabilities { grid-template-columns: repeat(2, 1fr); }
+      .journey-intro { grid-template-columns: 1fr; gap: 16px; }
+    }
+    @media (max-width: 600px) {
+      .shell { width: min(100% - 32px, 1180px); }
+      .hero { padding: 20px 0 44px; }
+      .hero-meta { align-items: flex-start; gap: 14px; font-size: .64rem; }
+      .header-logo { width: 108px; }
+      .hero-meta-copy { display: grid; gap: 2px; text-align: right; }
+      .hero-grid { gap: 30px; padding-top: 36px; }
+      h1 { font-size: clamp(2.6rem, 12.5vw, 3.6rem); }
+      h2 { font-size: 2.25rem; }
+      .hero-photo { border-radius: 4px 4px 48px 4px; }
+      .trust { padding-bottom: 56px; }
+      .trust-stat { padding: 20px 16px; }
+      .logo-row { gap: 18px 26px; }
+      .logo-row img { height: 34px; max-width: 128px; }
+      .logo-row img.tall { height: 46px; }
+      .logo-row img.wide { height: 26px; }
+      section { padding: 72px 0; }
+      .manifesto { padding: 56px 0 60px; }
+      .stats { grid-template-columns: 1fr; }
+      .stat + .stat { padding-left: 0; border-left: 0; border-top: 1px solid rgba(255,255,255,.22); }
+      .reels { grid-template-columns: 1fr !important; }
+      .reels-head { margin-top: 60px; }
+      .testimonial { grid-template-columns: 1fr; gap: 18px; }
+      .testimonial img { width: 72px; height: 72px; }
+      .concept-grid { grid-template-columns: 1fr; }
+      .concept:first-child { grid-column: auto; }
+      .concept { min-height: 430px; }
+      .capabilities { grid-template-columns: 1fr; }
+      .capability { min-height: auto; }
+      .journey-steps { grid-template-columns: 1fr; }
+      .journey-step { padding: 22px 0; }
+      .journey-step + .journey-step { padding-left: 0; border-left: 0; border-top: 1px solid rgba(255,255,255,.25); }
+      .partnership-head { display: block; }
+      .partnership-term { display: inline-block; margin-top: 22px; }
+      .deliverable-groups { grid-template-columns: 1fr; }
+      .deliverable-group + .deliverable-group { border-left: 0; border-top: 1px solid var(--line); }
+      .report-row { grid-template-columns: 34px 1fr; }
+      .report-row em { grid-column: 2; }
+      .report-foot, .footer-grid { display: block; }
+      .footer-grid .sources { margin-top: 16px; text-align: left; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button { transition: none; }
+    }
+    @media print {
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- =================== HERO =================== -->
+    <header class="hero gridded" id="top">
+      <div class="shell">
+        <div class="hero-meta">
+          <a class="header-logo" href="#top" aria-label="Hallpass — back to top"><img src="/assets/hallpass-logo.png" alt="Hallpass" width="1235" height="395" /></a>
+          <div class="hero-meta-copy">
+            <span>Prepared for the Town of Clayton</span>
+            <span>September 2026</span>
+          </div>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">A place-marketing concept</p>
+            <h1>Clayton is growing fast. Let’s make its story <em>clear.</em></h1>
+            <p class="lead">Your economic development strategic plan says it plainly: Clayton must tell its story clearly and consistently to site selectors, developers, and prospective employers. Hallpass can help turn that ambition into a story people see, remember, and act on.</p>
+            <div class="hero-actions">
+              <a class="button" href="https://zcal.co/ryanmcneill/hallpass" target="_blank" rel="noopener noreferrer" data-cta="hero">Book a 30-minute call</a>
+              <span class="hero-marker">A focused two-minute read for Joe Stallings</span>
+            </div>
+          </div>
+          <figure class="hero-photo">
+            <img src="/clayton/assets/hero.jpg" alt="Aerial view of downtown Clayton, North Carolina at sunset" fetchpriority="high" />
+            <figcaption>Clayton, North Carolina</figcaption>
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <!-- =================== TRUST STRIP (fixed) =================== -->
+    <div class="trust gridded" aria-label="Hallpass track record">
+      <div class="shell">
+        <p class="eyebrow trust-label">The Hallpass track record</p>
+        <div class="trust-card">
+          <div class="trust-stats">
+            <div class="trust-stat"><strong>900M+</strong><span>views across videos created for clients</span></div>
+            <div class="trust-stat"><strong>1.4M+</strong><span>organic views for Ardmore Means More in its first year</span></div>
+            <div class="trust-stat"><strong class="word">Emmy-winning TV craft</strong><span>Led by a former producer on <i>Deadliest Catch</i></span></div>
+            <div class="trust-stat"><strong class="word">ADDY award-winning</strong><span>Recognized by the American Advertising Awards</span></div>
+          </div>
+          <div class="trust-logos">
+            <p>Trusted by</p>
+            <div class="logo-row">
+              
+              <img src="/assets/logos/ada.svg" class="tall" alt="Ardmore Development Authority" loading="lazy" />
+              
+              <img src="/assets/logos/ou.svg" class="wide" alt="The University of Oklahoma" loading="lazy" />
+              
+              <img src="/assets/logos/noble.png" alt="Noble Research Institute" loading="lazy" />
+              
+              <img src="/assets/logos/sea-cadets.png" class="wide" alt="U.S. Naval Sea Cadet Corps" loading="lazy" />
+              
+              <img src="/assets/logos/bgca.svg" alt="Boys &amp; Girls Clubs" loading="lazy" />
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================== 01 CONCEPTS =================== -->
+    <section aria-labelledby="concept-heading">
+      <div class="shell">
+        <div class="concept-intro">
+          <div>
+            <p class="eyebrow"><span class="section-no">01</span>What this could look like</p>
+            <h2 id="concept-heading">Make Clayton’s advantages <em>tangible.</em></h2>
+          </div>
+          <p class="lead">A connected editorial system, not one-off posts, could give site selectors, developers, employers, and new residents multiple ways into the same Clayton story.</p>
+        </div>
+        <div class="concept-grid">
+          
+          <article class="concept">
+            <img src="/clayton/assets/concept-1.jpg" alt="Clayton small-business owners photographed with their teams and storefronts" loading="lazy" />
+            <div class="concept-shade"></div>
+            <div class="concept-copy">
+              <small>Illustrative series · Short-form video</small>
+              <h3>Made in Clayton</h3>
+              <p>Local business owners as brand ambassadors: the video testimonials and spotlight campaigns your plan calls for.</p>
+            </div>
+          </article>
+          
+          <article class="concept">
+            <img src="/clayton/assets/concept-2.jpg" alt="Aerial view of tree-lined Clayton neighborhoods" loading="lazy" />
+            <div class="concept-shade"></div>
+            <div class="concept-copy">
+              <small>Illustrative series · Quality of life</small>
+              <h3>Next Door to Wake County</h3>
+              <p>Workforce, schools, and room to grow, shown through the families and employers who chose Clayton.</p>
+            </div>
+          </article>
+          
+          
+          <article class="concept social-card" aria-label="Illustrative Clayton social media post">
+            <div class="social-head">
+              <span class="social-avatar" aria-hidden="true">C</span>
+              <div class="social-identity"><strong>Think Clayton</strong><span>Clayton, North Carolina</span></div>
+              <span class="social-more" aria-hidden="true">•••</span>
+            </div>
+            <div class="social-image">
+              <img src="/clayton/assets/social.jpg" alt="Shops and flags along East Main Street in downtown Clayton" loading="lazy" />
+            </div>
+            <div class="social-body">
+              <div class="social-actions" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.7 9.7 0 0 1-4-.9L3 21l1.9-4.7A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                <svg class="bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4Z"/></svg>
+              </div>
+              <p class="social-caption"><strong>thinkclaytonnc</strong>An afternoon on East Main Street.</p>
+              <span class="social-meta">Illustrative social post</span>
+            </div>
+          </article>
+        </div>
+        <p class="illustrative note">Illustrative campaign concepts only—not proposed final creative.</p>
+      </div>
+    </section>
+
+    <!-- =================== 02 PLAN =================== -->
+    <section class="plan" aria-labelledby="plan-heading">
+      <div class="shell plan-grid">
+        <div>
+          <p class="eyebrow"><span class="section-no">02</span>Your plan says</p>
+          <p class="lead">The strategic direction is already set. The next step is a publishing system that gives that direction a recognizable voice, a steady cadence, and measurable reach.</p>
+        </div>
+        <div>
+          <h2 id="plan-heading" class="quote">“As a town competing in a strong region for business investment and residents, Clayton must <strong>tell its story clearly and consistently.</strong>”</h2>
+          <p class="quote-source">Town of Clayton Economic Development Strategic Plan, approved September 22, 2025, Goal 4, p. 8</p>
+          
+          <div class="outside-note">
+            <b>The implementation window is open.</b>
+            Strategy 4C calls for developing Clayton’s brand narrative “with external marketing support,” and for engaging local businesses as brand ambassadors, “featuring them in video testimonials and spotlight campaigns” (p. 9).
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== POINT OF VIEW (copy fixed, photo + people line custom) =================== -->
+    <section class="manifesto" aria-labelledby="manifesto-heading">
+      <div class="shell manifesto-grid">
+        <div>
+          <p class="eyebrow">A Hallpass point of view</p>
+          <h2 id="manifesto-heading">Made to be watched, not just <em>approved.</em></h2>
+          <div class="manifesto-copy">
+            <p>We’ve all seen the drone footage with the inspirational voiceover. It has its place. But attention rarely starts at 400 feet.</p>
+            <p>We start with people: the owner who built a business downtown, the manufacturer that chose Clayton over the rest of the Triangle, the family that moved here for room to grow.</p>
+            <p class="manifesto-close">Story. Hooks. Emotion. Human interest. That’s what people choose to watch—and the results below are the proof.</p>
+          </div>
+        </div>
+        <figure class="manifesto-photo">
+          <img src="/clayton/assets/pov.jpg" alt="A Clayton business owner at work" loading="lazy" />
+          <figcaption>Clayton small business</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- =================== 03 PROOF (fixed, except scale line) =================== -->
+    <section class="proof" aria-labelledby="proof-heading">
+      <div class="shell">
+        <div class="proof-layout">
+          <div>
+            <p class="eyebrow"><span class="section-no">03</span>Proof from Ardmore</p>
+            <h2 id="proof-heading">A place story can become a growth engine.</h2>
+            <p class="proof-story">For the Ardmore Development Authority in Oklahoma, Hallpass built <strong>Ardmore Means More</strong>—a recurring, people-first campaign that shows the place through the businesses, makers, and moments that give it meaning.</p>
+          </div>
+          <div>
+            <div class="stats" aria-label="Ardmore campaign results">
+              <div class="stat"><strong>1.4M+</strong><span>organic video views in the campaign’s first year</span></div>
+              <div class="stat"><strong>+108%</strong><span>short-form video views in Q2 versus Q1 2026</span></div>
+            </div>
+            <p class="note">Reported by the Ardmore Development Authority, August 2026.</p>
+            <figure class="growth" aria-labelledby="growth-title">
+              <figcaption id="growth-title" class="growth-title">Cumulative video views, Feb 2025 – Aug 2026</figcaption>
+              <div class="growth-plot">
+                <svg id="growth-svg" viewBox="0 0 560 260" role="img" aria-label="Line chart: video views stayed nearly flat at about 98,000 over the nine months before Hallpass began posting in late November 2025, then climbed to more than 1.4 million additional views by August 2026."></svg>
+                <div class="growth-tip" id="growth-tip" hidden></div>
+              </div>
+              <p class="growth-note">Before: 98K views in nine months (combined ADA + ATA accounts). After: 1.4M+ on Ardmore Means More channels.</p>
+            </figure>
+            
+          </div>
+        </div>
+
+        <div class="reels-head">
+          <h3>Watch the work.</h3>
+          <p>Stories from Ardmore Means More. Each one starts with a local place and the people who give it meaning.</p>
+        </div>
+        <div class="reels" id="reels">
+
+          <article class="reel" data-platform="facebook" data-permalink="https://www.facebook.com/reel/3089098644764980/" data-title="1,000+ acres, ready to build">
+            <div class="reel-frame"></div>
+            <div class="reel-caption">
+              <span class="views">Site selection</span>
+              <b>1,000+ acres, ready to build</b>
+              <small>Ardmore’s industrial airpark, pitched to site selectors in under a minute: location, rail, runway, and room to grow.</small>
+            </div>
+          </article>
+          
+          <article class="reel" data-platform="instagram" data-permalink="https://www.instagram.com/reel/DWESx-akYF0/" data-title="More than a stop on the map">
+            <div class="reel-frame"></div>
+            <div class="reel-caption">
+              <span class="views">Community history</span>
+              <b>More than a stop on the map</b>
+              <small>How Ardmore’s railroad became a story of resilience, told from the platform of its Amtrak station.</small>
+            </div>
+          </article>
+          <article class="reel" data-platform="instagram" data-permalink="https://www.instagram.com/reel/DY5r3HwxO6X/" data-title="The people behind the places">
+            <div class="reel-frame"></div>
+            <div class="reel-caption">
+              <span class="views">People-first storytelling</span>
+              <b>The people behind the places</b>
+              <small>The family behind Café Alley, The Commodore, and The Dew Drop Inn.</small>
+            </div>
+          </article>
+          
+        </div>
+
+        <figure class="testimonial">
+          <img src="/assets/andy-lennon.jpg" alt="Andy Lennon" width="192" height="192" loading="lazy" />
+          <div>
+            <blockquote>Marketing is no longer a stressor for me, but a great opportunity for growth and success.</blockquote>
+            <cite><b>Andy Lennon</b> · Executive Director, U.S. Naval Sea Cadet Corps</cite>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- =================== 04 REPORT =================== -->
+    <section class="report" aria-labelledby="report-heading">
+      <div class="shell report-layout">
+        <div>
+          <p class="eyebrow"><span class="section-no">04</span>The report that travels</p>
+          <h2 id="report-heading">Built to earn attention—and explain the <em>return.</em></h2>
+          <p class="lead">Good content creates reach. Good reporting turns that reach into a clear board conversation: what worked, what it advanced, and what comes next.</p>
+          <div class="travel-line">A concise quarterly brief your team can forward to leadership without rebuilding the story.</div>
+        </div>
+        <div class="report-sheet" aria-label="Example structure of a quarterly board report">
+          <div class="report-head">
+            <strong>Clayton Economic Development<br />Quarterly Visibility Brief</strong>
+            <span>EXAMPLE STRUCTURE<br />BOARD-READY</span>
+          </div>
+          <div class="report-row"><b>01</b><div><strong>Outcome summary</strong><small>Reach, audience growth, engagement, and earned coverage</small></div><em>Measured</em></div>
+          <div class="report-row"><b>02</b><div><strong>What earned attention</strong><small>Top stories, formats, themes, and audience signals</small></div><em>Interpreted</em></div>
+          <div class="report-row"><b>03</b><div><strong>Connection to the plan</strong><small>Adjacent to Wake County, high quality of life, workforce-ready, business-friendly</small></div><em>Aligned</em></div>
+          <div class="report-row"><b>04</b><div><strong>Next-quarter priorities</strong><small>Editorial calendar, optimization, and opportunities</small></div><em>Actionable</em></div>
+          <div class="report-foot"><span>One source of truth</span><span>Monthly tracking · Quarterly narrative</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== 05 CAPABILITIES + INVESTMENT =================== -->
+    <section aria-labelledby="work-heading">
+      <div class="shell">
+        <div class="work-intro">
+          <div>
+            <p class="eyebrow"><span class="section-no">05</span>Capabilities at a glance</p>
+            <h2 id="work-heading">One partner from strategy to steady output.</h2>
+          </div>
+          <p>We connect the plan, the story, and the publishing rhythm—so economic development teams get more than a campaign launch. They get a durable system for showing progress in public and reporting it internally.</p>
+        </div>
+        <div class="capabilities" aria-label="Hallpass capabilities">
+          <article class="capability"><span class="num">01</span><h3>Brand strategy &amp; messaging</h3><p>Positioning, narrative, and voice.</p></article>
+          <article class="capability"><span class="num">02</span><h3>Web design &amp; development</h3><p>Useful sites built around decisions.</p></article>
+          <article class="capability"><span class="num">03</span><h3>Always-on social &amp; video</h3><p>Stories made to be watched.</p></article>
+          <article class="capability"><span class="num">04</span><h3>Paid media management</h3><p>Strategy, creative, and optimization.</p></article>
+          <article class="capability"><span class="num">05</span><h3>Email marketing &amp; newsletters</h3><p>Recurring audience touchpoints.</p></article>
+          <article class="capability"><span class="num">06</span><h3>Tourism &amp; visitor marketing</h3><p>Events, travel, and local discovery.</p></article>
+          <article class="capability"><span class="num">07</span><h3>Marketing strategy</h3><p>Goals, audiences, channels, priorities.</p></article>
+          <article class="capability"><span class="num">08</span><h3>Measurement &amp; reporting</h3><p>KPIs and board-ready context.</p></article>
+        </div>
+        <div class="journey" aria-labelledby="journey-heading">
+          <div class="journey-intro">
+            <div>
+              <p class="eyebrow">The full journey</p>
+              <h3 id="journey-heading">Every impression has a job.</h3>
+            </div>
+            <p>We do not stop at clicks and views. For site selectors, developers, and prospective employers, we build the next useful step toward choosing Clayton.</p>
+          </div>
+          <div class="journey-steps">
+            <div class="journey-step"><span>01 · First impression</span><strong>More site selectors seeing Clayton</strong><p>Earn attention with stories people choose to watch.</p></div>
+            <div class="journey-step"><span>02 · Consideration</span><strong>Make Clayton easier to evaluate</strong><p>Sector collateral, RFI-ready materials, and site-visit support answer the next questions.</p></div>
+            <div class="journey-step"><span>03 · Conversion</span><strong>More qualified prospect conversations</strong><p>Turn qualified interest into direct economic-development conversations.</p></div>
+          </div>
+          <p class="journey-close">Every top-of-funnel number ladders to the bottom-of-funnel outcome Clayton actually wants.</p>
+        </div>
+        <div class="offers" aria-label="Potential Clayton Year One Partnership investment and deliverables">
+          <div class="partnership-head">
+            <div>
+              <p class="eyebrow">What a Clayton Year One Partnership could include</p>
+              <div class="price-tiers">
+                <div class="price-tier start">
+                  <span class="price-label">Start with The Launch</span>
+                  <strong>$19,500 <span>+ travel</span></strong>
+                  <p>A production trip to Clayton. Three months of people-first social media videos. A playbook that shows your team how to grow it from there.</p>
+                </div>
+                <div class="price-tier">
+                  <span class="price-label">Then continue with The Signal</span>
+                  <strong>$9,500 <span>/ month</span></strong>
+                  <p>A twelve-month program that turns Clayton’s adopted strategy into steady publishing and board-ready reporting.</p>
+                </div>
+              </div>
+              <p class="price-flex">Scope and investment are shaped around your budget and the plan’s priorities.</p>
+            </div>
+            <span class="partnership-term">Illustrative 12-month view</span>
+          </div>
+          <div class="deliverable-groups">
+            <article class="deliverable-group">
+              <span class="phase">01 · One-time</span>
+              <h3>Foundation</h3>
+              <ul>
+                <li>Clayton brand narrative and messaging</li>
+                <li>Visual one-page summary of the plan</li>
+                <li>Business ambassador video series kickoff</li>
+              </ul>
+            </article>
+            <article class="deliverable-group">
+              <span class="phase">02 · Monthly</span>
+              <h3>Recurring engine</h3>
+              <ul>
+                <li>Always-on social and short-form video</li>
+                <li>Brand ambassador video testimonials</li>
+                <li>Paid campaigns for site selectors and developers <span class="fine">(ad spend billed separately)</span></li>
+                <li>Success-story spotlights for the e-newsletter</li>
+              </ul>
+            </article>
+            <article class="deliverable-group">
+              <span class="phase">03 · Quarterly</span>
+              <h3>Report + plan</h3>
+              <ul>
+                <li>Board-ready performance report</li>
+                <li>Next-quarter planning session</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== CTA =================== -->
+    <section class="cta" aria-labelledby="cta-heading">
+      <div class="shell">
+        <p class="eyebrow">A practical next conversation</p>
+        <h2 id="cta-heading">Let’s put Clayton’s story to work for its economic goals.</h2>
+        <p>Let’s spend 30 minutes on the plan, the near-term opportunity, and what a focused first phase could look like.</p>
+        <a class="button" href="https://zcal.co/ryanmcneill/hallpass" target="_blank" rel="noopener noreferrer" data-cta="closing">Book a 30-minute call</a>
+        <p class="note">30 minutes · No preparation needed · Or email <a href="mailto:ryan@hallpassdigital.com?subject=Clayton%20place-marketing%20concept">ryan@hallpassdigital.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div class="footer-brand"><img class="footer-logo" src="/assets/hallpass-logo.png" alt="Hallpass" width="1235" height="395" /><span class="note">Economic development &amp; place marketing.</span></div>
+      <div class="sources">
+        <div>Sources: <a href="https://thinkclaytonnc.org/DocumentCenter/View/7077/2025-Town-of-Clayton-Economic-Development-Strategic-Plan-PDF" target="_blank" rel="noopener noreferrer">Town of Clayton Economic Development Strategic Plan</a>, approved September 22, 2025. Ardmore results reported by the Ardmore Development Authority, August 2026.</div>
+        <div>Photography: Photos courtesy of <a href="https://thinkclaytonnc.org/" target="_blank" rel="noopener noreferrer">Think Clayton</a> (Town of Clayton Economic Development); East Main Street by Indy beetle, CC0, via <a href="https://commons.wikimedia.org/wiki/File:East_Main_Street,_Clayton,_North_Carolina.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>. Client logos are trademarks of their respective owners.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* Ardmore Means More reels: official Instagram embeds, loaded only when the section nears the screen. */
+    (function () {
+      var reels = document.querySelectorAll('.reel');
+      var needsEmbed = false;
+      reels.forEach(function (reel) {
+        var url = reel.getAttribute('data-permalink');
+        var frame = reel.querySelector('.reel-frame');
+        var title = reel.getAttribute('data-title');
+        if (url && reel.getAttribute('data-platform') === 'facebook') {
+          /* Facebook video plugin. Works for posts owned by a single Page (collab posts refuse to embed). */
+          frame.classList.add('is-fb');
+          frame.innerHTML = '<iframe src="https://www.facebook.com/plugins/video.php?href=' + encodeURIComponent(url) +
+            '&show_text=false&width=380&t=0" title="' + title + ' (Facebook video)" loading="lazy" scrolling="no" frameborder="0" allowfullscreen="true" ' +
+            'allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>';
+        } else if (url) {
+          needsEmbed = true;
+          frame.innerHTML =
+            '<blockquote class="instagram-media" data-instgrm-permalink="' + url + '?utm_source=ig_embed" data-instgrm-version="14">' +
+            '<a class="reel-fallback" href="' + url + '" target="_blank" rel="noopener noreferrer">' +
+            '<span>Ardmore Means More</span><div class="play" aria-hidden="true">▶</div><strong>' + title + '</strong><span>Watch on Instagram ↗</span></a></blockquote>';
+        } else {
+          reel.remove(); /* no link yet: hide the slot rather than show a placeholder */
+        }
+      });
+      var grid = document.getElementById('reels');
+      var count = grid.querySelectorAll('.reel').length;
+      if (count === 0) { grid.closest('.shell').querySelector('.reels-head').remove(); grid.remove(); }
+      else if (count < 3) { grid.style.gridTemplateColumns = 'repeat(' + count + ', minmax(0, 380px))'; }
+      if (!needsEmbed) return;
+      var loaded = false;
+      function load() {
+        if (loaded) return; loaded = true;
+        var s = document.createElement('script');
+        s.async = true; s.src = 'https://www.instagram.com/embed.js';
+        document.body.appendChild(s);
+      }
+      var target = document.getElementById('reels');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          if (entries.some(function (e) { return e.isIntersecting; })) { load(); io.disconnect(); }
+        }, { rootMargin: '1500px 0px' });
+        io.observe(target);
+      } else { load(); }
+    })();
+
+
+    /* Growth chart: cumulative views. Anchors are reported totals (98K before; Q1 391K; Q2 814K; 1.4M+ after); months between are estimated. */
+    (function () {
+      var svg = document.getElementById('growth-svg'); if (!svg) return;
+      var NS = 'http://www.w3.org/2000/svg';
+      var months = ['Feb 2025','Mar 2025','Apr 2025','May 2025','Jun 2025','Jul 2025','Aug 2025','Sep 2025','Oct 2025','Nov 2025','Dec 2025','Jan 2026','Feb 2026','Mar 2026','Apr 2026','May 2026','Jun 2026','Jul 2026','Aug 2026','Sep 2026'];
+      var vals = [0,11,22,33,44,54,65,76,87,98,110,170,270,400,560,790,1060,1375,1460,1500]; // thousands, start of month
+      var take = 9; // start of Nov 2025 ≈ Hallpass begins posting (late Nov)
+      var narrow = svg.parentNode.clientWidth < 480;
+      var W = narrow ? 360 : 560, H = narrow ? 250 : 260, L = 40, R = 14, T = 18, B = 34;
+      svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+      var max = 1500, n = vals.length;
+      function x(i) { return L + (W - L - R) * i / (n - 1); }
+      function y(v) { return T + (H - T - B) * (1 - v / max); }
+      function el(tag, attrs, parent) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); (parent || svg).appendChild(e); return e; }
+      // grid + y labels
+      [0, 500, 1000, 1500].forEach(function (v) {
+        el('line', { x1: L, x2: W - R, y1: y(v), y2: y(v), stroke: 'rgba(255,255,255,.12)', 'stroke-width': 1 });
+        var t = el('text', { x: L - 8, y: y(v) + 4, 'text-anchor': 'end', fill: '#b9c7c2', 'font-size': 11 }); t.textContent = v === 0 ? '0' : (v >= 1000 ? (v / 1000) + 'M' : v + 'K');
+      });
+      // x labels
+      [[0, "Feb ’25"], [take, "Nov ’25"], [n - 1, "Aug ’26"]].forEach(function (d) {
+        var t = el('text', { x: x(d[0]), y: H - 10, 'text-anchor': d[0] === 0 ? 'start' : (d[0] === n - 1 ? 'end' : 'middle'), fill: '#b9c7c2', 'font-size': 11 }); t.textContent = d[1];
+      });
+      // area under "after"
+      var area = 'M' + x(take) + ',' + y(0);
+      for (var i = take; i < n; i++) area += ' L' + x(i) + ',' + y(vals[i]);
+      area += ' L' + x(n - 1) + ',' + y(0) + ' Z';
+      el('path', { d: area, fill: 'rgba(244,187,53,.12)' });
+      // before line (muted, dashed) and after line (gold)
+      var before = '', after = '';
+      for (var j = 0; j <= take; j++) before += (j ? ' L' : 'M') + x(j) + ',' + y(vals[j]);
+      for (var k = take; k < n; k++) after += (k === take ? 'M' : ' L') + x(k) + ',' + y(vals[k]);
+      el('path', { d: before, fill: 'none', stroke: '#8fa39c', 'stroke-width': 2, 'stroke-dasharray': '4 4', 'stroke-linecap': 'round' });
+      el('path', { d: after, fill: 'none', stroke: '#f4bb35', 'stroke-width': 2.5, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' });
+      // takeover marker + annotation with arrow
+      el('line', { x1: x(take), x2: x(take), y1: T + 4, y2: y(0), stroke: '#e85427', 'stroke-width': 1.5, 'stroke-dasharray': '3 3' });
+      el('circle', { cx: x(take), cy: y(vals[take]), r: 5, fill: '#e85427', stroke: '#223c3a', 'stroke-width': 2 });
+      var ax = x(take) - 12, ay = y(620);
+      var ann = el('text', { x: ax - 4, y: ay - 20, 'text-anchor': 'end', fill: '#fff6e2', 'font-size': 12.5, 'font-weight': 700 });
+      var t1 = el('tspan', { x: ax - 4, dy: 0 }, ann); t1.textContent = 'Hallpass took over';
+      var t2 = el('tspan', { x: ax - 4, dy: 16 }, ann); t2.textContent = 'Ardmore’s social here';
+      el('path', { d: 'M' + (ax - 2) + ',' + (ay + 4) + ' Q' + (x(take) - 6) + ',' + (ay + 30) + ' ' + (x(take) - 3) + ',' + (y(vals[take]) - 12), fill: 'none', stroke: '#e85427', 'stroke-width': 1.75, 'marker-end': 'url(#growth-arrow)' });
+      var defs = el('defs', {}); var m = el('marker', { id: 'growth-arrow', viewBox: '0 0 10 10', refX: 6, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+      el('path', { d: 'M0,0 L10,5 L0,10 Z', fill: '#e85427' }, m);
+      // end label
+      var e1 = el('text', { x: x(n - 5) - 4, y: y(vals[n - 1]) + 10, 'text-anchor': 'end', fill: '#f4bb35', 'font-size': 13, 'font-weight': 800 }); e1.textContent = '+1.4M views';
+      el('circle', { cx: x(n - 1), cy: y(vals[n - 1]), r: 4.5, fill: '#f4bb35', stroke: '#223c3a', 'stroke-width': 2 });
+      // hover
+      var tip = document.getElementById('growth-tip'), plot = svg.parentNode;
+      var guide = el('line', { y1: T, y2: y(0), stroke: 'rgba(255,255,255,.35)', 'stroke-width': 1, visibility: 'hidden' });
+      var dot = el('circle', { r: 4.5, fill: '#fff6e2', stroke: '#223c3a', 'stroke-width': 2, visibility: 'hidden' });
+      function fmt(v) { return v >= 1000 ? (v / 1000).toFixed(2).replace(/0$/, '') + 'M' : v + 'K'; }
+      function show(evt) {
+        var r = svg.getBoundingClientRect(), px = (evt.clientX - r.left) * W / r.width;
+        var i = Math.max(0, Math.min(n - 1, Math.round((px - L) / ((W - L - R) / (n - 1)))));
+        guide.setAttribute('x1', x(i)); guide.setAttribute('x2', x(i)); guide.setAttribute('visibility', 'visible');
+        dot.setAttribute('cx', x(i)); dot.setAttribute('cy', y(vals[i])); dot.setAttribute('visibility', 'visible');
+        tip.hidden = false; tip.style.left = (x(i) * r.width / W) + 'px'; tip.style.top = (y(vals[i]) * r.height / H) + 'px';
+        tip.innerHTML = '<b>≈' + fmt(vals[i]) + ' total views</b>' + (i === 0 ? 'Feb 2025' : 'Through ' + months[i - 1]) + (i < take ? ' · before Hallpass' : (i === take ? ' · Hallpass begins' : ' · with Hallpass'));
+      }
+      function hide() { tip.hidden = true; guide.setAttribute('visibility', 'hidden'); dot.setAttribute('visibility', 'hidden'); }
+      el('rect', { x: L, y: T, width: W - L - R, height: H - T - B, fill: 'transparent' }).addEventListener('mousemove', show);
+      svg.addEventListener('mouseleave', hide);
+    })();
+    /* Track call-to-action clicks in Vercel Web Analytics. */
+    document.querySelectorAll('[data-cta]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        if (window.va) window.va('event', { name: 'Book call click', data: { location: a.getAttribute('data-cta') } });
+      });
+    });
+  </script>
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
