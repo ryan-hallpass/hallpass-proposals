@@ -49,13 +49,13 @@
     "reel": {
       "handle": "thinkclaytonnc",
       "avatar": "C",
-      "hook": "What nobody tells you about starting a business in Clayton",
+      "hook": "Why we chose Clayton\n(and never looked back)",
       "subtitle": "“Honestly? The people. Everybody here wants you to make it.”",
       "caption": "Meet the people building Clayton, one storefront at a time.",
       "photo": {
-        "src": "_src/clayton/pov.jpg",
-        "alt": "A Clayton small-business owner at work, framed like an interview",
-        "position": "40% center"
+        "src": "_src/clayton/reel-ai.jpg",
+        "alt": "Illustrative interview with a Clayton small-business owner",
+        "position": "center"
       }
     }
   },
