@@ -89,5 +89,19 @@
   "footer": {
     "sources_html": "<a href=\"https://www.kwit.org/podcast/spm-news/2026-09-22/sioux-city-council-votes-to-fund-391k-towards-explore-siouxland-for-tourism-expansion\" target=\"_blank\" rel=\"noopener noreferrer\">KWIT, Sept. 22, 2026</a>; <a href=\"https://exploresiouxland.com/about/\" target=\"_blank\" rel=\"noopener noreferrer\">Explore Siouxland mission statement</a>.",
     "photo_credits_html": "All photos courtesy of <a href=\"https://exploresiouxland.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Explore Siouxland</a>; hero photo by Britton Hacke Photography."
+  },
+  "postcard": {
+    "photo": "_src/postcards/cc/saturday-in-the-park.jpg",
+    "photo_position": "42% center",
+    "photo_tag": "Saturday in the Park, Sioux City",
+    "photo_credit": "IJF99, CC BY-SA 4.0, via Wikimedia Commons (cropped)",
+    "to": {
+      "name": "Stacie Anderson",
+      "company": "Explore Siouxland",
+      "address_line1": "PO Box 2656",
+      "address_city": "Sioux City",
+      "address_state": "IA",
+      "address_zip": "51106"
+    }
   }
 }

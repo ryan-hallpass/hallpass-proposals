@@ -16,6 +16,15 @@ from markupsafe import Markup, escape
 
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(os.path.dirname(HERE))
 
+PC_COPY = {
+    "ed": {"note_lead": "We read {city}’s economic development plan and",
+           "note_tail": "and how it can help the city reach its economic goals.",
+           "read_line": "A two-minute read, built around your strategic plan"},
+    "tourism": {"note_lead": "We saw the news about {city}’s tourism funding and",
+                "note_tail": "and how it can turn that investment into visits, stays, and results your funders can see.",
+                "read_line": "A two-minute read, built around your year-one goals"},
+}
+
 def em(s): return Markup(re.sub(r"\*(.+?)\*", r"<em>\1</em>", str(escape(s or ""))))
 def file_url(p): return "file://" + os.path.join(ROOT, p.lstrip("/"))
 
@@ -31,8 +40,12 @@ def main():
     if not hero.startswith("/") and not pc.get("photo"): hero = f"/{slug}/assets/hero.jpg"
     font = os.path.join(ROOT, "_template", "postcard", "archivo.woff2")
     env = Environment(loader=FileSystemLoader(HERE), autoescape=True); env.filters["em"] = em
+    pc_copy = dict(PC_COPY[d.get("variant", "ed")]); pc_copy.update(pc.get("copy") or {})
+    pc_copy = {k: v.replace("{city}", d["city_name"]) for k, v in pc_copy.items()}
+    pc_copy["note_lead_lc"] = pc_copy["note_lead"][:1].lower() + pc_copy["note_lead"][1:]
     out = env.get_template("postcard.html").render(
         slug=slug, city_name=d["city_name"], city_full=d["city_full"], headline=d["hero"]["headline"],
+        prepared_for=d.get("prepared_for") or "the " + d["city_full"], pc_copy=pc_copy,
         photo_tag=pc.get("photo_tag") or d["hero"]["photo_tag"], photo_pos=pc.get("photo_position", "center"), photo_credit=pc.get("photo_credit", ""), contact_first=(d.get("contact_name") or "").split(" ")[0],
         hero_url=file_url(hero), logo_url=file_url("/assets/hallpass-logo.png"),
         font_url="file://" + font, qr_data="data:image/png;base64," + base64.b64encode(buf.getvalue()).decode())
