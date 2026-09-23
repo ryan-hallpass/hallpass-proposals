@@ -46,7 +46,7 @@ def main():
     out = env.get_template("postcard.html").render(
         slug=slug, city_name=d["city_name"], city_full=d["city_full"], headline=d["hero"]["headline"],
         prepared_for=d.get("prepared_for") or "the " + d["city_full"], pc_copy=pc_copy,
-        photo_tag=pc.get("photo_tag") or d["hero"]["photo_tag"], photo_pos=pc.get("photo_position", "center"), photo_credit=pc.get("photo_credit", ""), contact_first=(d.get("contact_name") or "").split(" ")[0],
+        photo_tag=pc["photo_tag"] if "photo_tag" in pc else d["hero"]["photo_tag"], photo_pos=pc.get("photo_position", "center"), photo_credit=pc.get("photo_credit", ""), contact_first=(d.get("contact_name") or "").split(" ")[0],
         hero_url=file_url(hero), logo_url=file_url("/assets/hallpass-logo.png"),
         font_url="file://" + font, qr_data="data:image/png;base64," + base64.b64encode(buf.getvalue()).decode())
     od = os.path.join(ROOT, "_src", "postcards", slug); os.makedirs(od, exist_ok=True)

@@ -7,22 +7,45 @@
   "hero": {
     "headline": "Ramsey is growing. Let’s tell its *story.*",
     "lead": "Your 2026 strategic plan sets a clear direction: strengthen Ramsey’s identity, brand and image, and find new ways to tell the story of Ramsey to new residents and businesses. Hallpass can help turn that ambition into a story people see, remember, and act on.",
-    "photo": { "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/mojn0sa4/img_2157.jpg?width=2000&format=jpg", "alt": "A crowd in lawn chairs watching an outdoor evening concert in Ramsey" },
+    "photo": {
+      "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/mojn0sa4/img_2157.jpg?width=2000&format=jpg",
+      "alt": "A crowd in lawn chairs watching an outdoor evening concert in Ramsey"
+    },
     "photo_tag": "Ramsey, Minnesota"
   },
   "concepts": {
     "headline": "Make Ramsey’s advantages *tangible.*",
     "lead": "A connected editorial system, not one-off posts, could give new residents, growing businesses, and site selectors multiple ways into the same Ramsey story.",
     "series": [
-      { "label": "Illustrative series · Short-form video", "title": "Built in Ramsey",
+      {
+        "label": "Illustrative series · Short-form video",
+        "title": "Built in Ramsey",
         "description": "The companies that chose Ramsey, like Diamond Graphics, here since 2008, told by the people who do the work.",
-        "photo": { "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/auohcznu/diamond-graphics-ribbon-cutting-811_edited.jpg?width=2000&format=jpg", "alt": "A crowd cutting a ribbon outside the Diamond Graphics building in Ramsey" } },
-      { "label": "Illustrative series · Quality of life", "title": "Room to Breathe",
+        "photo": {
+          "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/auohcznu/diamond-graphics-ribbon-cutting-811_edited.jpg?width=2000&format=jpg",
+          "alt": "A crowd cutting a ribbon outside the Diamond Graphics building in Ramsey"
+        }
+      },
+      {
+        "label": "Illustrative series · Quality of life",
+        "title": "Room to Breathe",
         "description": "Rivers, trails, and quiet evenings: the balance of suburban, rural, and natural living that keeps families here.",
-        "photo": { "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/zhnh1njq/canoe-at-sunset-7_25.jpg?width=2000&format=jpg", "alt": "Two people fishing from a canoe silhouetted against a golden sunset on the water" } }
+        "photo": {
+          "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/zhnh1njq/canoe-at-sunset-7_25.jpg?width=2000&format=jpg",
+          "alt": "Two people fishing from a canoe silhouetted against a golden sunset on the water"
+        }
+      }
     ],
-    "social": { "account": "Ramsey, Minnesota", "location": "Ramsey, Minnesota", "handle": "tellramseysstory", "caption": "A new place to play, right here in Ramsey.",
-      "photo": { "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/c0khhfas/in-the-game-pickleball-nov-2025.jpg?width=2000&format=jpg", "alt": "Players on indoor pickleball courts at In the Game Pickleball & Golf in Ramsey" } }
+    "social": {
+      "account": "Ramsey, Minnesota",
+      "location": "Ramsey, Minnesota",
+      "handle": "tellramseysstory",
+      "caption": "A new place to play, right here in Ramsey.",
+      "photo": {
+        "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/c0khhfas/in-the-game-pickleball-nov-2025.jpg?width=2000&format=jpg",
+        "alt": "Players on indoor pickleball courts at In the Game Pickleball & Golf in Ramsey"
+      }
+    }
   },
   "plan": {
     "quote": "Explore new avenues to *tell the story of Ramsey* and market the community to new residents and businesses.",
@@ -32,7 +55,10 @@
   },
   "pov": {
     "people_line": "We start with people: the founders who grew a State Fair tent into a boat house, the manufacturer that chose Ramsey in 2008, the families who came here for room to breathe.",
-    "photo": { "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/soude24t/2026-07-09-jplusa.jpg?width=2000&format=jpg", "alt": "Joe and Alissa Zimmerley, founders of Summer Lakes Beverage, standing in front of the new Summer Lakes Boat House" },
+    "photo": {
+      "src": "https://media-002-us.cdn.govstack.com/cityoframseymn-002-us/media/soude24t/2026-07-09-jplusa.jpg?width=2000&format=jpg",
+      "alt": "Joe and Alissa Zimmerley, founders of Summer Lakes Beverage, standing in front of the new Summer Lakes Boat House"
+    },
     "caption": "Summer Lakes Boat House"
   },
   "scale_target": "",
@@ -46,12 +72,39 @@
     "step3": "More resident and business inquiries"
   },
   "deliverables": {
-    "launch": ["City motto and brand story", "Social media audit and content plan", "Branding guide with templates and logos"],
-    "monthly": ["Always-on social and short-form video", "Business spotlights with Economic Development", "Paid campaigns for new residents and businesses (ad spend billed separately)", "Stories from The COR and The Waterfront Park"]
+    "launch": [
+      "City motto and brand story",
+      "Social media audit and content plan",
+      "Branding guide with templates and logos"
+    ],
+    "monthly": [
+      "Always-on social and short-form video",
+      "Business spotlights with Economic Development",
+      "Paid campaigns for new residents and businesses (ad spend billed separately)",
+      "Stories from The COR and The Waterfront Park"
+    ]
   },
   "cta_headline": "Let’s tell the story of Ramsey.",
   "footer": {
     "sources_html": "<a href=\"https://www.cityoframseymn.gov/city-hall/strategic-plan/\" target=\"_blank\" rel=\"noopener noreferrer\">City of Ramsey 2026 Strategic Plan</a>, adopted April 28, 2026.",
     "photo_credits_html": "All photos courtesy of the <a href=\"https://www.cityoframseymn.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">City of Ramsey</a>."
+  },
+  "postcard": {
+    "photo": "_src/postcards/ramsey/ai-concert.jpg",
+    "photo_position": "center",
+    "photo_tag": "",
+    "photo_credit": "",
+    "to": {
+      "name": "Brian Hagen",
+      "company": "City of Ramsey",
+      "address_line1": "7550 Sunwood Dr NW",
+      "address_city": "Ramsey",
+      "address_state": "MN",
+      "address_zip": "55303"
+    },
+    "copy": {
+      "note_lead": "We read Ramsey’s 2026 strategic plan and",
+      "note_tail": "and how it can help the city reach new residents and businesses."
+    }
   }
 }

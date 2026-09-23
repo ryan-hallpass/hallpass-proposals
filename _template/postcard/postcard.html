@@ -48,7 +48,7 @@
 
 <section class="side front">
   <div class="photo" style="background-image:url('{{ hero_url }}');background-position:{{ photo_pos }}"></div>
-  <div class="tag">{{ photo_tag }}</div>
+  {% if photo_tag %}<div class="tag">{{ photo_tag }}</div>{% endif %}
   <div class="copy">
     <img class="logo" src="{{ logo_url }}" alt="Hallpass">
     <div>
