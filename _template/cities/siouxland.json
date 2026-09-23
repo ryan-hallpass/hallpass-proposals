@@ -47,6 +47,18 @@
         "src": "https://exploresiouxland.com/wp-content/uploads/2024/02/Homepage_Hero-2.jpg",
         "alt": "String lights over Historic Fourth Street in downtown Sioux City at dusk"
       }
+    },
+    "reel": {
+      "handle": "explore_siouxland",
+      "avatar": "S",
+      "hook": "We came for the tournament.\nWe stayed for the weekend.",
+      "subtitle": "“Honestly? The food alone was worth the drive.”",
+      "caption": "Why people keep coming back to Siouxland.",
+      "photo": {
+        "src": "_src/siouxland/reel-ai.jpg",
+        "alt": "Illustrative interview with a visiting parent at a Siouxland youth tournament",
+        "position": "center"
+      }
     }
   },
   "plan": {
