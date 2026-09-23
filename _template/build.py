@@ -148,7 +148,10 @@ def main():
     d["hero"]["photo"]["src"] = fetch_photo(d["hero"]["photo"], slug, "hero")
     for i, c in enumerate(d["concepts"]["series"], 1):
         c["photo"]["src"] = fetch_photo(c["photo"], slug, f"concept-{i}")
-    d["concepts"]["social"]["photo"]["src"] = fetch_photo(d["concepts"]["social"]["photo"], slug, "social")
+    if d["concepts"].get("social"):
+        d["concepts"]["social"]["photo"]["src"] = fetch_photo(d["concepts"]["social"]["photo"], slug, "social")
+    if d["concepts"].get("reel"):
+        d["concepts"]["reel"]["photo"]["src"] = fetch_photo(d["concepts"]["reel"]["photo"], slug, "reel")
     d["pov"]["photo"]["src"] = fetch_photo(d["pov"]["photo"], slug, "pov")
     env = Environment(loader=FileSystemLoader(HERE), autoescape=select_autoescape(["html"]), undefined=ChainableUndefined)
     env.filters.update(em=em, strong=strong, fine=fine, plain=plain)

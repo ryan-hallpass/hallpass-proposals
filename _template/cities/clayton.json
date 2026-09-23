@@ -7,22 +7,57 @@
   "hero": {
     "headline": "Clayton is growing fast. Let’s make its story *clear.*",
     "lead": "Your economic development strategic plan says it plainly: Clayton must tell its story clearly and consistently to site selectors, developers, and prospective employers. Hallpass can help turn that ambition into a story people see, remember, and act on.",
-    "photo": { "src": "_src/clayton/hero.jpg", "alt": "Aerial view of downtown Clayton, North Carolina at sunset" },
+    "photo": {
+      "src": "_src/clayton/hero.jpg",
+      "alt": "Aerial view of downtown Clayton, North Carolina at sunset"
+    },
     "photo_tag": "Clayton, North Carolina"
   },
   "concepts": {
     "headline": "Make Clayton’s advantages *tangible.*",
     "lead": "A connected editorial system, not one-off posts, could give site selectors, developers, employers, and new residents multiple ways into the same Clayton story.",
     "series": [
-      { "label": "Illustrative series · Short-form video", "title": "Made in Clayton",
+      {
+        "label": "Illustrative series · Short-form video",
+        "title": "Made in Clayton",
         "description": "Local business owners as brand ambassadors: the video testimonials and spotlight campaigns your plan calls for.",
-        "photo": { "src": "_src/clayton/concept1.jpg", "alt": "Clayton small-business owners photographed with their teams and storefronts" } },
-      { "label": "Illustrative series · Quality of life", "title": "Next Door to Wake County",
+        "photo": {
+          "src": "_src/clayton/concept1.jpg",
+          "alt": "Clayton small-business owners photographed with their teams and storefronts"
+        }
+      },
+      {
+        "label": "Illustrative series · Quality of life",
+        "title": "Next Door to Wake County",
         "description": "Workforce, schools, and room to grow, shown through the families and employers who chose Clayton.",
-        "photo": { "src": "_src/clayton/concept2.jpg", "alt": "Aerial view of tree-lined Clayton neighborhoods" } }
+        "photo": {
+          "src": "_src/clayton/concept2.jpg",
+          "alt": "Aerial view of tree-lined Clayton neighborhoods"
+        }
+      }
     ],
-    "social": { "account": "Think Clayton", "location": "Clayton, North Carolina", "handle": "thinkclaytonnc", "caption": "An afternoon on East Main Street.",
-      "photo": { "src": "_src/clayton/social.jpg", "alt": "Shops and flags along East Main Street in downtown Clayton" } }
+    "social": {
+      "account": "Think Clayton",
+      "location": "Clayton, North Carolina",
+      "handle": "thinkclaytonnc",
+      "caption": "An afternoon on East Main Street.",
+      "photo": {
+        "src": "_src/clayton/social.jpg",
+        "alt": "Shops and flags along East Main Street in downtown Clayton"
+      }
+    },
+    "reel": {
+      "handle": "thinkclaytonnc",
+      "avatar": "C",
+      "hook": "What nobody tells you about starting a business in Clayton",
+      "subtitle": "“Honestly? The people. Everybody here wants you to make it.”",
+      "caption": "Meet the people building Clayton, one storefront at a time.",
+      "photo": {
+        "src": "_src/clayton/pov.jpg",
+        "alt": "A Clayton small-business owner at work, framed like an interview",
+        "position": "40% center"
+      }
+    }
   },
   "plan": {
     "quote": "As a town competing in a strong region for business investment and residents, Clayton must *tell its story clearly and consistently.*",
@@ -31,8 +66,11 @@
   },
   "pov": {
     "people_line": "We start with people: the owner who built a business downtown, the manufacturer that chose Clayton over the rest of the Triangle, the family that moved here for room to grow.",
-    "photo": { "src": "_src/clayton/pov.jpg", "alt": "A Clayton business owner at work" },
-    "caption": "Clayton small business"
+    "photo": {
+      "src": "_src/clayton/owners.jpg",
+      "alt": "Three Clayton business owners standing together and smiling"
+    },
+    "caption": "Clayton business owners"
   },
   "scale_target": "",
   "report": {
@@ -45,14 +83,30 @@
     "step3": "More qualified prospect conversations"
   },
   "deliverables": {
-    "launch": ["Clayton brand narrative and messaging", "Visual one-page summary of the plan", "Business ambassador video series kickoff"],
-    "monthly": ["Always-on social and short-form video", "Brand ambassador video testimonials", "Paid campaigns for site selectors and developers (ad spend billed separately)", "Success-story spotlights for the e-newsletter"]
+    "launch": [
+      "Clayton brand narrative and messaging",
+      "Visual one-page summary of the plan",
+      "Business ambassador video series kickoff"
+    ],
+    "monthly": [
+      "Always-on social and short-form video",
+      "Brand ambassador video testimonials",
+      "Paid campaigns for site selectors and developers (ad spend billed separately)",
+      "Success-story spotlights for the e-newsletter"
+    ]
   },
   "footer": {
     "sources_html": "<a href=\"https://thinkclaytonnc.org/DocumentCenter/View/7077/2025-Town-of-Clayton-Economic-Development-Strategic-Plan-PDF\" target=\"_blank\" rel=\"noopener noreferrer\">Town of Clayton Economic Development Strategic Plan</a>, approved September 22, 2025.",
     "photo_credits_html": "Photos courtesy of <a href=\"https://thinkclaytonnc.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Think Clayton</a> (Town of Clayton Economic Development); East Main Street by Indy beetle, CC0, via <a href=\"https://commons.wikimedia.org/wiki/File:East_Main_Street,_Clayton,_North_Carolina.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
   },
   "postcard": {
-    "to": {"name": "Joe Stallings, Economic Development", "company": "Town of Clayton", "address_line1": "PO Box 879", "address_city": "Clayton", "address_state": "NC", "address_zip": "27528"}
+    "to": {
+      "name": "Joe Stallings, Economic Development",
+      "company": "Town of Clayton",
+      "address_line1": "PO Box 879",
+      "address_city": "Clayton",
+      "address_state": "NC",
+      "address_zip": "27528"
+    }
   }
 }
