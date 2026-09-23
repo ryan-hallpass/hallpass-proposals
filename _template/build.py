@@ -61,6 +61,25 @@ VARIANTS = {
     },
 }
 
+# Client logo strip per variant ("Trusted by"). A city JSON can replace it with "logos".
+LOGOS = {
+    "ed": [
+        {"file": "ada.svg", "cls": "tall", "alt": "Ardmore Development Authority"},
+        {"file": "ou.svg", "cls": "wide", "alt": "The University of Oklahoma"},
+        {"file": "noble.png", "cls": "", "alt": "Noble Research Institute"},
+        {"file": "sea-cadets.png", "cls": "wide", "alt": "U.S. Naval Sea Cadet Corps"},
+        {"file": "bgca.svg", "cls": "", "alt": "Boys & Girls Clubs"},
+    ],
+    "tourism": [
+        {"file": "ada.svg", "cls": "tall", "alt": "Ardmore Development Authority"},
+        {"file": "royal-caribbean.svg", "cls": "", "alt": "Royal Caribbean"},
+        {"file": "columbia.svg", "cls": "wide", "alt": "Columbia Records"},
+        {"file": "ou.svg", "cls": "wide", "alt": "The University of Oklahoma"},
+        {"file": "noble.png", "cls": "", "alt": "Noble Research Institute"},
+        {"file": "bgca.svg", "cls": "", "alt": "Boys & Girls Clubs"},
+    ],
+}
+
 def em(s):      # *word* -> orange emphasis
     return Markup(re.sub(r"\*(.+?)\*", r"<em>\1</em>", str(escape(s or ""))))
 def strong(s):  # *pillars* -> teal bold inside the plan quote
@@ -136,6 +155,7 @@ def main():
     copy = dict(VARIANTS[d.get("variant", "ed")]); copy.update(d.get("copy") or {})
     d["copy"] = {k: v.replace("{city}", d["city_name"]) for k, v in copy.items()}
     d.setdefault("prepared_for", "the " + d["city_full"])
+    d.setdefault("logos", LOGOS[d.get("variant", "ed")])
     out = env.get_template("template.html").render(**d)
     os.makedirs(os.path.join(ROOT, slug), exist_ok=True)
     open(os.path.join(ROOT, slug, "index.html"), "w").write(out)
