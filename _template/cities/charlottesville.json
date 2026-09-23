@@ -45,6 +45,18 @@
         "src": "_src/cville/social.jpg",
         "alt": "Crowds walking between vendor tents at the Charlottesville City Market"
       }
+    },
+    "reel": {
+      "handle": "whycharlottesville",
+      "avatar": "C",
+      "hook": "Why we moved our company\nto Charlottesville",
+      "subtitle": "“We found the talent here. And the city actually picked up the phone.”",
+      "caption": "The companies betting on Charlottesville, in their own words.",
+      "photo": {
+        "src": "_src/cville/reel-ai.jpg",
+        "alt": "Illustrative interview with a Charlottesville company owner",
+        "position": "center"
+      }
     }
   },
   "plan": {
