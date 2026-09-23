@@ -1,0 +1,9 @@
+# local-only
+.vercel
+.env
+.env.*
+.github-token
+Claude outputs/
+.DS_Store
+# downloaded copy of hallpassdigital.com (separate site)
+_src/hallpassdigital-site/

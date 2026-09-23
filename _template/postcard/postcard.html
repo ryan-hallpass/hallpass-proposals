@@ -1,0 +1,75 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face { font-family: Archivo; src: url("{{ font_url }}") format("woff2"); font-weight: 100 900; }
+  @page { size: 11.25in 6.25in; margin: 0; }
+  :root { --cream:#f8efd9; --cream2:#fff6e2; --ink:#223c3a; --muted:#56615d; --gold:#f4bb35; --ember:#e85427; --line:#dccfb0;
+          --grid: linear-gradient(rgba(34,60,58,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(34,60,58,.06) 1px, transparent 1px); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 11.25in; height: 6.25in; }
+  body { font-family: Archivo, "Helvetica Neue", Arial, sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .side { position: relative; width: 11.25in; height: 6.25in; overflow: hidden; page-break-after: always; background: var(--cream) var(--grid); background-size: .32in .32in; }
+  em { font-style: normal; color: var(--ember); }
+  /* safe area = 0.25in from bleed edge (0.125 bleed + 0.125 margin) */
+
+  /* FRONT */
+  .front .photo { position: absolute; top: 0; left: 0; bottom: 0; width: 5.6in; background: var(--ink) center/cover no-repeat; }
+  .front .tag { position: absolute; left: .45in; bottom: .45in; background: var(--gold); color: var(--ink); font-size: 9pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: .1in .16in; }
+  .front .copy { position: absolute; top: .55in; bottom: .5in; left: 6.05in; right: .55in; display: flex; flex-direction: column; justify-content: space-between; }
+  .logo { width: 1.35in; }
+  .eyebrow { display: flex; align-items: center; gap: .08in; font-size: 8.5pt; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+  .eyebrow::before { content: ""; width: .08in; height: .08in; border-radius: 50%; background: var(--ember); }
+  .front h1 { margin-top: .16in; font-size: 30pt; line-height: .98; letter-spacing: -.045em; font-weight: 800; }
+  .front .url { font-size: 11pt; font-weight: 700; }
+  .front .url small { display: block; font-size: 8.5pt; font-weight: 500; color: var(--muted); letter-spacing: .02em; margin-bottom: .04in; }
+
+  /* BACK */
+  .back .msg { position: absolute; top: .5in; left: .55in; width: 5.85in; bottom: .5in; display: flex; flex-direction: column; gap: .18in; }
+  .back .note { font-size: 12pt; line-height: 1.42; }
+  .back .note b { font-weight: 700; }
+  .back .qrrow { display: flex; gap: .22in; align-items: center; margin-top: auto; }
+  .back .qr { width: 1.45in; height: 1.45in; background: #fff; padding: .08in; border-radius: .04in; }
+  .back .qr img { width: 100%; height: 100%; display: block; }
+  .back .qrtext { font-size: 10pt; line-height: 1.35; }
+  .back .qrtext strong { display: block; font-size: 12.5pt; margin-bottom: .04in; }
+  .back .stat { display: flex; gap: .25in; padding: .14in .18in; background: var(--ink); color: var(--cream2); border-radius: .04in; width: fit-content; }
+  .back .stat div { font-size: 8.5pt; line-height: 1.3; }
+  .back .stat b { display: block; color: var(--gold); font-size: 17pt; font-weight: 800; letter-spacing: -.03em; }
+  .back .offer { font-size: 10.5pt; line-height: 1.4; border-left: 3px solid var(--gold); padding-left: .14in; }
+  .back .offer b { display:block; font-size: 12pt; }
+  .back .sig { font-size: 10pt; color: var(--muted); }
+  .back .sig b { color: var(--ink); }
+  .back .rule { position: absolute; top: .5in; bottom: .5in; left: 6.75in; border-left: 1px solid var(--line); }
+  .back .right { position: absolute; top: 0; right: 0; bottom: 0; width: 4.5in; background: #fff; } /* kept clear for postage + address */
+  .back .ret { position: absolute; top: .5in; left: 6.95in; font-size: 7.5pt; line-height: 1.3; color: var(--muted); }
+</style></head><body>
+
+<section class="side front">
+  <div class="photo" style="background-image:url('{{ hero_url }}')"></div>
+  <div class="tag">{{ photo_tag }}</div>
+  <div class="copy">
+    <img class="logo" src="{{ logo_url }}" alt="Hallpass">
+    <div>
+      <p class="eyebrow">Prepared for the {{ city_full }}</p>
+      <h1>{{ headline | em }}</h1>
+    </div>
+    <p class="url"><small>A two-minute read, built around your strategic plan</small>proposals.hallpassdigital.com/{{ slug }}</p>
+  </div>
+</section>
+
+<section class="side back">
+  <div class="right"></div>
+  <div class="rule"></div>
+  <div class="msg">
+    <img class="logo" src="{{ logo_url }}" alt="Hallpass" style="width:1.05in">
+    <p class="note">{% if contact_first %}{{ contact_first }}, w{% else %}W{% endif %}e read {{ city_name }}’s economic development plan and built a short page around it: <b>what telling {{ city_name }}’s story could look like</b>, what the same approach did for Ardmore, Oklahoma, and a simple first step.</p>
+    <div class="stat"><div><b>98K → 1.4M+</b>video views, before and after Hallpass</div><div><b>900M+</b>views across videos made for clients</div></div>
+    <p class="offer"><b>Start with The Launch.</b>One production trip to {{ city_name }}. Three months of people-first stories.</p>
+    <div class="qrrow">
+      <div class="qr"><img src="{{ qr_data }}" alt=""></div>
+      <div class="qrtext"><strong>Scan to see your page.</strong>Or visit proposals.hallpassdigital.com/{{ slug }}</div>
+    </div>
+    <p class="sig"><b>Ryan McNeill</b> · Hallpass · ryan@hallpassdigital.com</p>
+  </div>
+</section>
+</body></html>

@@ -1,0 +1,4 @@
+# Pages here are intentionally not indexed.
+# Crawling is allowed so search engines can see the noindex header and meta tag on every page.
+User-agent: *
+Allow: /

@@ -1,0 +1,56 @@
+{
+  "slug": "charlottesville",
+  "city_name": "Charlottesville",
+  "city_full": "City of Charlottesville",
+  "prepared_date": "September 2026",
+  "contact_name": "Chris Engel",
+  "hero": {
+    "headline": "Charlottesville is open for investment. Let’s tell that *story.*",
+    "lead": "Your economic development strategic plan calls for a clear economic development identity and a consistent “Why Charlottesville?” story that every partner can use. Hallpass can help turn that ambition into a story people see, remember, and act on.",
+    "photo": { "src": "_src/cville/hero.jpg", "alt": "People walking under the trees and café umbrellas of Charlottesville’s Downtown Mall on a sunny day" },
+    "photo_tag": "Downtown Mall, Charlottesville"
+  },
+  "concepts": {
+    "headline": "Make Charlottesville’s advantages *tangible.*",
+    "lead": "A connected editorial system—not one-off posts—could give investors, founders, talent, and visitors multiple ways into the same Charlottesville story.",
+    "series": [
+      { "label": "Illustrative series · Short-form video", "title": "Lab to Main Street",
+        "description": "UVA researchers turning discoveries into companies, filmed where the work happens, from the lab bench to the downtown storefront.",
+        "photo": { "src": "_src/cville/concept1.jpg", "alt": "A University of Virginia researcher standing in his lab" } },
+      { "label": "Illustrative series · Quality of life", "title": "The Charlottesville Weekend",
+        "description": "Wineries, the Downtown Mall, and the Blue Ridge foothills: the quality of life that keeps talent rooted here.",
+        "photo": { "src": "_src/cville/concept2.jpg", "alt": "Vineyard rows at King Family Vineyards with the Blue Ridge foothills behind" } }
+    ],
+    "social": { "account": "Why Charlottesville", "location": "Charlottesville, Virginia", "handle": "whycharlottesville", "caption": "Saturday mornings at the City Market.",
+      "photo": { "src": "_src/cville/social.jpg", "alt": "Crowds walking between vendor tents at the Charlottesville City Market" } }
+  },
+  "plan": {
+    "quote": "Economic development and tourism are as much about *storytelling* as they are about policy work.",
+    "quote_source": "Charlottesville Economic Development Strategic Plan 2024–2028, Strategy 5.2",
+    "outside_help_heading": "The plan names the gap.",
+    "outside_help_quote": "One of the plan’s own findings: “Charlottesville’s economic development story is largely untold.” Goal 5 commits to positioning Charlottesville “as a community open for investment.”"
+  },
+  "pov": {
+    "people_line": "We start with people: the founder building in Charlottesville, the shop that’s anchored the Downtown Mall for decades, the UVA researcher whose work could change the world.",
+    "photo": { "src": "_src/cville/pov.jpg", "alt": "A vendor talks with a customer over a table of fresh beets at the Charlottesville City Market" },
+    "caption": "Charlottesville City Market"
+  },
+  "scale_target": "",
+  "report": {
+    "title_line1": "Charlottesville Economic Development",
+    "pillars": "Business climate, industry strengths, workforce, and quality of life"
+  },
+  "journey": {
+    "audiences": "site selectors, expanding businesses, relocating talent, and visitors",
+    "step1": "More unique website visitors",
+    "step3": "Qualified investment inquiries"
+  },
+  "deliverables": {
+    "launch": ["Economic development identity and sub-brand", "“Why Charlottesville?” story and pitch", "Refreshed website and investor materials"],
+    "monthly": ["Always-on social and short-form video", "Paid campaigns for investor audiences (ad spend billed separately)", "Industry investment portfolios with the Central Virginia Partnership", "Success-story series with UVA and Venture Central"]
+  },
+  "footer": {
+    "sources_html": "<a href=\"https://charlottesville.gov/DocumentCenter/View/10041/Charlottesville-Economic-Development-Strategic-Plan-pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Charlottesville Economic Development Strategic Plan 2024–2028</a>.",
+    "photo_credits_html": "hero, “Charlottesville Downtown Mall” by Bobak Ha’Eri, <a href=\"https://creativecommons.org/licenses/by/3.0/\" target=\"_blank\" rel=\"noopener noreferrer\">CC BY 3.0</a>, via <a href=\"https://commons.wikimedia.org/wiki/File:2008-0830-Charlottesville-DowntownMall.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>. Concept images courtesy of the <a href=\"https://news.virginia.edu/\" target=\"_blank\" rel=\"noopener noreferrer\">University of Virginia</a>, <a href=\"https://wineandcountrylife.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Wine &amp; Country Life</a>, and <a href=\"https://chilesfamilyorchards.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Chiles Family Orchards</a>. Point-of-view photo courtesy of the <a href=\"https://www.charlottesville.gov/619/Charlottesville-Farmers-Markets\" target=\"_blank\" rel=\"noopener noreferrer\">City of Charlottesville</a>."
+  }
+}
