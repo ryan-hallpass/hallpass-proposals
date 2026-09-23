@@ -46,6 +46,7 @@ Return exactly these fields, in this order, as Markdown. Keep the labels.
 # Proposal brief — {City, State}
 
 ## Meta
+- variant: "ed" for an economic development office or city; "tourism" for a CVB, tourism bureau, or destination marketing org. (A tourism brief can hang on a funding decision, a marketing plan, or the org's mission instead of a strategic plan.)
 - city_name: (as used in headlines, e.g. "Davis")
 - city_full: (e.g. "City of Davis")
 - url_slug: (lowercase, e.g. "davis")
@@ -103,6 +104,10 @@ Return exactly these fields, in this order, as Markdown. Keep the labels.
 - recurring_engine: exactly 4 bullets, 4–10 words each. Keep "Always-on social and short-form video" first. Keep "Paid campaigns for … (ad spend billed separately)" if paid media fits. Name real local partners where relevant.
 - report_plan: keep "Board-ready performance report" and "Next-quarter planning session"
 
+## Postcard (printed and mailed)
+- postcard_photo: one landscape photo of the city with a person in it, licensed for commercial print use: CC BY, CC BY-SA, CC0, or public domain (Wikimedia Commons is the best source). NOT tourism-bureau or city photos without a license. Give the direct URL, the Commons page, the author, and the license.
+- postcard_photo_tag: short place label (e.g. "UC Davis, California")
+
 ## CTA
 - headline: (pattern: "Let's put {City}'s story to work for its economic goals.")
 
@@ -120,7 +125,7 @@ These appear on every proposal exactly as written:
 - **Proof from Ardmore**: "A place story can become a growth engine." Ardmore Means More for the Ardmore Development Authority: 1.4M+ organic video views in year one; +108% short-form video views, Q2 vs Q1 2026; before/after chart (98K views in the nine months before Hallpass, 1.4M+ after); videos (Airpark site-selection reel, Ardmore railroad story, the family behind Café Alley); testimonial: "Marketing is no longer a stressor for me, but a great opportunity for growth and success." — Andy Lennon, Executive Director, U.S. Naval Sea Cadet Corps.
 - **The report that travels**: "Built to earn attention—and explain the return." Four rows: Outcome summary, What earned attention, Connection to the plan, Next-quarter priorities.
 - **Capabilities at a glance**: "One partner from strategy to steady output." Eight capabilities: brand strategy & messaging; web design & development; always-on social & video; paid media management; email marketing & newsletters; tourism & visitor marketing; marketing strategy; measurement & reporting.
-- **Investment**: "Start with The Launch — $19,500 + travel: one shoot, three months of stories" · "Then continue with The Signal — $9,500 / month."
+- **Investment**: "Start with The Launch — $19,500 + travel: a production trip to {CITY}, three months of people-first social media videos, and a playbook that shows your team how to grow it from there" · "Then continue with The Signal — $9,500 / month."
 - **CTA**: button "Book a 30-minute call" (https://zcal.co/ryanmcneill/hallpass) · "Let's spend 30 minutes on the plan, the near-term opportunity, and what a focused first phase could look like." · "30 minutes · No preparation needed · Or email ryan@hallpassdigital.com"
 
 ## 5. Before you return the brief, check
