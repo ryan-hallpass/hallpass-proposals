@@ -93,6 +93,14 @@
     "photo": "_src/postcards/davis/postcard-hero.jpg",
     "photo_position": "62% center",
     "photo_tag": "UC Davis, California",
-    "photo_credit": "Cody Duty / UC Davis College of Engineering, CC BY 2.0, via Wikimedia Commons (cropped)"
+    "photo_credit": "Cody Duty / UC Davis College of Engineering, CC BY 2.0, via Wikimedia Commons (cropped)",
+    "to": {
+      "name": "Katie Yancey",
+      "company": "City of Davis",
+      "address_line1": "23 Russell Blvd",
+      "address_city": "Davis",
+      "address_state": "CA",
+      "address_zip": "95616"
+    }
   }
 }
