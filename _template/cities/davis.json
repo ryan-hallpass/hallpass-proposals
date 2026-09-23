@@ -45,6 +45,18 @@
         "src": "davis/assets/ucdavis-bikes.jpg",
         "alt": "A cyclist riding past rows of bicycles on the UC Davis campus"
       }
+    },
+    "reel": {
+      "handle": "elevatedavis",
+      "avatar": "D",
+      "hook": "Came for grad school.\nStayed to build my company.",
+      "subtitle": "“The people who can help you build it live down the street.”",
+      "caption": "The founders turning Davis research into Davis companies.",
+      "photo": {
+        "src": "_src/davis/reel-ai.jpg",
+        "alt": "Illustrative interview with a Davis startup founder",
+        "position": "center"
+      }
     }
   },
   "plan": {
