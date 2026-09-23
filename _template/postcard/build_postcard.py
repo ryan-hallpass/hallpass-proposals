@@ -42,7 +42,10 @@ def main():
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 600}, device_scale_factor=3)
         pg.goto("file://" + src, wait_until="networkidle"); pg.wait_for_timeout(500)
-        pg.pdf(path=os.path.join(od, "postcard.pdf"), width="11.25in", height="6.25in", print_background=True)
+        pdf = dict(width="11.25in", height="6.25in", print_background=True)
+        pg.pdf(path=os.path.join(od, "postcard.pdf"), **pdf)
+        pg.pdf(path=os.path.join(od, "front.pdf"), page_ranges="1", **pdf)   # Lob takes front and back separately
+        pg.pdf(path=os.path.join(od, "back.pdf"), page_ranges="2", **pdf)
         sides = pg.query_selector_all(".side")
         sides[0].screenshot(path=os.path.join(od, "front.png")); sides[1].screenshot(path=os.path.join(od, "back.png"))
         b.close()
