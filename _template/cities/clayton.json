@@ -107,6 +107,13 @@
       "address_city": "Clayton",
       "address_state": "NC",
       "address_zip": "27528"
+    },
+    "photo": "_src/postcards/clayton/cc/east-main.jpg",
+    "photo_position": "center",
+    "photo_tag": "East Main Street, Clayton",
+    "photo_credit": "Indy beetle, CC0 (Wikimedia Commons)",
+    "copy": {
+      "note_tail": "and how it can help the town reach its economic goals."
     }
   }
 }
