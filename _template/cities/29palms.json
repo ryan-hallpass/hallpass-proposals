@@ -106,14 +106,19 @@
     "photo": "_src/postcards/29palms/cc/inn-pool.jpg",
     "photo_position": "center",
     "photo_tag": "29 Palms Inn, Twentynine Palms",
-    "photo_credit": "Photo: Christopher Michel, CC BY 2.0",
+    "photo_credit": "Christopher Michel, CC BY 2.0",
     "to": {
       "name": "Breanne Dusastre",
       "company": "Visit 29 Palms",
-      "address_line1": "73484 Twentynine Palms Hwy",
+      "address_line1": "6136 Adobe Rd",
       "address_city": "Twentynine Palms",
       "address_state": "CA",
       "address_zip": "92277"
+    },
+    "copy": {
+      "note_lead": "We read Visit 29 Palms’ marketing plan and",
+      "story": "what telling the Twentynine Palms story could look like",
+      "note_tail": "and how it can turn more park visitors into overnight guests."
     }
   },
   "copy": {

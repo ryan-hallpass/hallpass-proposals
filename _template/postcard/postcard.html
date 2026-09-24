@@ -64,7 +64,7 @@
   <div class="rule"></div>
   <div class="msg">
     <img class="logo" src="{{ logo_url }}" alt="Hallpass" style="width:1.05in">
-    <p class="note">{% if contact_first %}{{ contact_first }}, {{ pc_copy.note_lead_lc }}{% else %}{{ pc_copy.note_lead }}{% endif %} built a short page around it: <b>what telling {{ city_name }}’s story could look like</b>, {{ pc_copy.note_tail }}</p>
+    <p class="note">{% if contact_first %}{{ contact_first }}, {{ pc_copy.note_lead_lc }}{% else %}{{ pc_copy.note_lead }}{% endif %} built a short page around it: <b>{{ pc_copy.story if pc_copy.story else 'what telling ' ~ city_name ~ '’s story could look like' }}</b>, {{ pc_copy.note_tail }}</p>
     <div class="stat"><div><span class="k">Our 2026 results for Ardmore, OK</span><b>98K → 1.4M+</b>video views, before and after Hallpass</div><div><span class="k">Cumulative client results</span><b>900M+</b>views across videos made for clients</div></div>
     <p class="offer"><b>Start with The Launch.</b>A production trip to {{ city_name }}. Three months of people-first social media videos. A playbook that shows your team how to grow it from there.</p>
     <div class="qrrow">
