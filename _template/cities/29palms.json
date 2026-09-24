@@ -1,0 +1,125 @@
+{
+  "slug": "29palms",
+  "variant": "tourism",
+  "city_name": "Twentynine Palms",
+  "city_full": "Visit 29 Palms",
+  "prepared_for": "Visit 29 Palms",
+  "prepared_date": "September 2026",
+  "contact_name": "Breanne Dusastre",
+  "hero": {
+    "headline": "Everyone passes through. Give them a reason to *stay.*",
+    "lead": "Visit 29 Palms has made strengthening the brand and “improved visual storytelling on social media” its priorities, all aimed at more overnight stays in town. Hallpass can help turn that plan into stories people see, share, and book a room around.",
+    "photo": {
+      "src": "_src/29palms/hero.jpg",
+      "alt": "Kids and families dancing in front of the stage at a Levitt AMP concert in Twentynine Palms"
+    },
+    "photo_tag": "Twentynine Palms, California"
+  },
+  "concepts": {
+    "headline": "Make Twentynine Palms worth the *night.*",
+    "lead": "A connected editorial system, not one-off posts, could give park visitors, stargazers, and creative travelers more than one reason to book a room in town.",
+    "series": [
+      {
+        "label": "Illustrative series · Short-form video",
+        "title": "After Dark",
+        "description": "Dark-sky nights told through the people who run the telescopes, the guests who stay up for them, and the rooms they wake up in.",
+        "photo": {
+          "src": "_src/29palms/concept1.jpg",
+          "alt": "Stargazers outside the Sky’s The Limit observatory under the Milky Way in Twentynine Palms"
+        }
+      },
+      {
+        "label": "Illustrative series · Park-to-town itineraries",
+        "title": "The North Entrance",
+        "description": "Morning in the park, afternoon at the murals, dinner in town: day plans that turn Joshua Tree day-trippers into overnight guests.",
+        "photo": {
+          "src": "_src/29palms/concept2.jpg",
+          "alt": "Hikers on a rocky desert trail in Joshua Tree National Park near Twentynine Palms"
+        }
+      }
+    ],
+    "social": {
+      "account": "Visit 29 Palms",
+      "location": "Twentynine Palms, California",
+      "handle": "visit29palms",
+      "caption": "Saturday at the farmers market.",
+      "photo": {
+        "src": "_src/29palms/social.jpg",
+        "alt": "Vendor tents and palm trees at the weekly farmers market in Twentynine Palms"
+      }
+    },
+    "reel": {
+      "handle": "visit29palms",
+      "avatar": "V",
+      "hook": "Everyone drives through.\nHere’s why you should stay.",
+      "subtitle": "“Honestly? The park gets you here. The town is why you stay.”",
+      "caption": "Meet the locals who make 29 Palms worth the stay.",
+      "photo": {
+        "src": "_src/reels/shop-owner.jpg",
+        "alt": "Illustrative interview with a Twentynine Palms shop owner",
+        "position": "center"
+      }
+    }
+  },
+  "plan": {
+    "quote": "Twentynine Palms is the vibrant heart of the Morongo Basin, where the spirit of *adventure, creativity, and timeless beauty* come together.",
+    "quote_source": "Visit 29 Palms TBID FY 2025–26 Tourism Marketing Plan & Budget, approved by the City Council Sept. 9, 2025, p. 7",
+    "outside_help_heading": "The plan already calls for storytellers.",
+    "outside_help_quote": "Page 11: “Partnerships with professional content creators and digital storytellers will highlight Twentynine Palms’ unique experiences through high-quality photography, video, and narrative features.” On Sept. 8, 2026, the City Council approved the 2026–27 plan and budget, and Breanne Dusastre told the council, “The story being told about Twentynine Palms continues to grow.”"
+  },
+  "pov": {
+    "people_line": "We start with people: the potter teaching a kid to throw clay, the innkeeper who knows which trail to hike at sunrise, the volunteer who keeps the telescopes pointed at the Milky Way.",
+    "photo": {
+      "src": "_src/29palms/pov.jpg",
+      "alt": "A smiling potter at the wheel with a young student at the 29 Palms Creative Center"
+    },
+    "caption": "29 Palms Creative Center"
+  },
+  "scale_target": "",
+  "report": {
+    "title_line1": "Visit 29 Palms",
+    "pillars": "Brand awareness, visitor engagement, overnight stays, and partnerships"
+  },
+  "journey": {
+    "audiences": "park visitors, stargazers, and creative travelers",
+    "step1": "More people seeing Twentynine Palms",
+    "step3": "More booked overnight stays"
+  },
+  "deliverables": {
+    "launch": [
+      "Visibility baseline across all channels",
+      "Year-one KPIs the board can track",
+      "Content plan for park, sky, and arts"
+    ],
+    "monthly": [
+      "Always-on social and short-form video",
+      "Dark-sky and park-to-town stories",
+      "Paid campaigns for drive-in visitors (ad spend billed separately)",
+      "Partner spotlights with hotels, restaurants, and galleries"
+    ]
+  },
+  "footer": {
+    "sources_html": "<a href=\"https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/visit29/FY25_26_Visit_29_Palms_TBID_Marketing_Plan_and_Budget_Approved_by_Council_07083733-279b-4d3c-bd48-3c5292bfbb4a.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Visit 29 Palms TBID FY 2025–26 Tourism Marketing Plan &amp; Budget</a>; <a href=\"https://www.hidesertstar.com/deserttrail/council-renews-tourism-business-improvement-district/article_9effee3c-96bf-49fe-b198-35e90696f4c4.html\" target=\"_blank\" rel=\"noopener noreferrer\">The Desert Trail, Sept. 14, 2026</a>.",
+    "photo_credits_html": "Photos courtesy of <a href=\"https://visit29.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit 29 Palms</a>. Reel image is illustrative."
+  },
+  "postcard": {
+    "photo": "_src/postcards/29palms/cc/inn-pool.jpg",
+    "photo_position": "center",
+    "photo_tag": "29 Palms Inn, Twentynine Palms",
+    "photo_credit": "Photo: Christopher Michel, CC BY 2.0",
+    "to": {
+      "name": "Breanne Dusastre",
+      "company": "Visit 29 Palms",
+      "address_line1": "73484 Twentynine Palms Hwy",
+      "address_city": "Twentynine Palms",
+      "address_state": "CA",
+      "address_zip": "92277"
+    }
+  },
+  "copy": {
+    "step3_body": "Turn park-day interest into booked nights in town.",
+    "signal_body": "A twelve-month program that turns the TBID’s investment into steady publishing and board-ready reporting.",
+    "cta": "Let’s fill more rooms in Twentynine Palms.",
+    "cta_note": "Let’s spend 30 minutes on your 2026–27 goals, the season ahead, and what a focused first phase could look like."
+  }
+}
