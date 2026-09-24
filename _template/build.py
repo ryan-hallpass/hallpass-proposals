@@ -42,6 +42,23 @@ VARIANTS = {
         "report_row3": "Connection to the plan",
         "priorities": "the plan’s priorities",
     },
+    "downtown": {
+        "concept": "downtown-marketing concept",
+        "concept_title": "Downtown Marketing Concept",
+        "plan_eyebrow": "Your plan says",
+        "plan_lead": "The direction is set. The next step is a publishing system that turns downtown’s businesses, events, and public spaces into stories people see every week.",
+        "team": "downtown teams",
+        "report_to": "reporting it to the board and partners",
+        "step2_title": "Give people more reasons to come downtown",
+        "step2_body": "Steady stories about owners, events, and new openings give people a reason to visit, stay longer, and come back.",
+        "step3_body": "Turn attention into visits, openings, and leasing interest you can report to the board.",
+        "signal_body": "A twelve-month program that turns downtown {city}’s plan into steady publishing and board-ready reporting.",
+        "cta": "Let’s make downtown {city} impossible to miss.",
+        "cta_note": "Let’s spend 30 minutes on the plan, the season ahead, and what a focused first phase could look like.",
+        "footer": "Downtown & place marketing.",
+        "report_row3": "Connection to the plan",
+        "priorities": "the plan’s priorities",
+    },
     "tourism": {
         "concept": "destination-marketing concept",
         "concept_title": "Destination Marketing Concept",
@@ -63,6 +80,14 @@ VARIANTS = {
 
 # Client logo strip per variant ("Trusted by"). A city JSON can replace it with "logos".
 LOGOS = {
+    "downtown": [
+        {"file": "ada.svg", "cls": "tall", "alt": "Ardmore Development Authority"},
+        {"file": "royal-caribbean.svg", "cls": "", "alt": "Royal Caribbean"},
+        {"file": "columbia.svg", "cls": "wide", "alt": "Columbia Records"},
+        {"file": "ou.svg", "cls": "wide", "alt": "The University of Oklahoma"},
+        {"file": "noble.png", "cls": "", "alt": "Noble Research Institute"},
+        {"file": "bgca.svg", "cls": "", "alt": "Boys & Girls Clubs"},
+    ],
     "ed": [
         {"file": "ada.svg", "cls": "tall", "alt": "Ardmore Development Authority"},
         {"file": "ou.svg", "cls": "wide", "alt": "The University of Oklahoma"},

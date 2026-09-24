@@ -1,0 +1,112 @@
+{
+  "slug": "bloomington",
+  "city_name": "Bloomington",
+  "city_full": "Port Authority of the City of Bloomington",
+  "prepared_for": "the Bloomington Port Authority",
+  "prepared_date": "September 2026",
+  "contact_name": "Holly Masek",
+  "hero": {
+    "headline": "Bloomington is ready to promote itself. Let’s make its story *clear.*",
+    "lead": "Your economic development strategic plan calls for a campaign that promotes Bloomington as a place to work and do business, anchored by a professional video built for business recruitment and talent attraction. Hallpass can help turn that ambition into a story people see, remember, and act on.",
+    "photo": {
+      "src": "_src/bloomington/hero.jpg",
+      "alt": "A large evening crowd on the lawn at the Normandale Lake Bandshell during Summer Fete"
+    },
+    "photo_tag": "Bloomington, Minnesota"
+  },
+  "concepts": {
+    "headline": "Make Bloomington’s advantages *visible.*",
+    "lead": "A connected editorial system, not one-off posts, could give site selectors, employers, early-career professionals, and the commuters who already work here multiple ways into the same Bloomington story.",
+    "series": [
+      {
+        "label": "Illustrative series · Talent attraction",
+        "title": "Built in Bloomington",
+        "description": "Employers and early-career workers show what a career here looks like, from manufacturing floors to corporate headquarters.",
+        "photo": {
+          "src": "_src/bloomington/concept1.jpg",
+          "alt": "Bloom in Bloomington interns and staff standing together at the program graduation"
+        }
+      },
+      {
+        "label": "Illustrative series · Quality of place",
+        "title": "Every Corner of Bloomington",
+        "description": "Parks, festivals, and local businesses from the South Loop to Normandale Lake, shown by the people who use them.",
+        "photo": {
+          "src": "_src/bloomington/concept2.jpg",
+          "alt": "People dancing near the stage at the On The One Music Festival at Bloomington Central Station Park in the South Loop"
+        }
+      }
+    ],
+    "reel": {
+      "handle": "bloomingtonatwork",
+      "avatar": "B",
+      "hook": "Why we chose Bloomington\n(and kept growing here)",
+      "subtitle": "“Honestly? Our team lives close, and the airport is five minutes away.”",
+      "caption": "Meet the companies growing in Bloomington.",
+      "photo": {
+        "src": "_src/reels/company-owner.jpg",
+        "alt": "Illustrative interview with a Bloomington company owner",
+        "position": "center"
+      }
+    }
+  },
+  "plan": {
+    "quote": "Clearly articulating the Bloomington story and sharing it *consistently across platforms and audiences* will help amplify the efforts of multiple partners.",
+    "quote_source": "Port Authority of the City of Bloomington Economic Development Strategic Plan, adopted February 2025, p. 3",
+    "outside_help_heading": "The plan already calls for video.",
+    "outside_help_quote": "Action 8.1.2 calls for a marketing campaign focused on business and talent attraction, including “a professional promotional video highlighting innovation and quality of place in Bloomington that can be used for business recruitment and talent attraction” (p. 25)."
+  },
+  "pov": {
+    "people_line": "We start with people: the manufacturer that chose to grow here, the intern who found a career through Bloom in Bloomington, the local owner who pitched at Hatch and expanded.",
+    "photo": {
+      "src": "_src/bloomington/pov.jpg",
+      "alt": "A vendor bags strawberries for customers at the Bloomington Farmers Market"
+    },
+    "caption": "Bloomington Farmers Market"
+  },
+  "scale_target": "",
+  "report": {
+    "title_line1": "Bloomington Port Authority",
+    "pillars": "Strategic location, robust infrastructure, diverse industries, rich cultural assets"
+  },
+  "journey": {
+    "audiences": "site selectors, employers, and early-career professionals",
+    "step1": "More early-career professionals seeing Bloomington",
+    "step3": "More qualified business and talent conversations"
+  },
+  "deliverables": {
+    "launch": [
+      "Business and talent attraction messaging",
+      "Visual one-page summary of the plan",
+      "Promotional video on innovation and place"
+    ],
+    "monthly": [
+      "Always-on social and short-form video",
+      "Employer and talent story series",
+      "Paid campaigns for early-career talent (ad spend billed separately)",
+      "Story content for newsletters and partners"
+    ]
+  },
+  "footer": {
+    "sources_html": "<a href=\"https://www.bloomingtonmn.gov/port/economic-development-strategic-plan\" target=\"_blank\" rel=\"noopener noreferrer\">Port Authority of the City of Bloomington Economic Development Strategic Plan</a>, adopted February 2025.",
+    "photo_credits_html": "Photos courtesy of the <a href=\"https://www.bloomingtonmn.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">City of Bloomington</a>. Reel image is illustrative."
+  },
+  "postcard": {
+    "photo": "_src/postcards/bloomington/cc/ice-garden.jpg",
+    "photo_position": "center",
+    "photo_tag": "Bloomington Ice Garden",
+    "photo_credit": "Ltp1220, CC BY-SA 4.0 (Wikimedia Commons)",
+    "to": {
+      "name": "Holly Masek, Port Authority Administrator",
+      "company": "Port Authority of the City of Bloomington",
+      "address_line1": "1800 W Old Shakopee Rd",
+      "address_city": "Bloomington",
+      "address_state": "MN",
+      "address_zip": "55431"
+    },
+    "copy": {
+      "note_lead": "We read the Port Authority’s economic development plan and",
+      "note_tail": "and how it can help Bloomington attract businesses and talent."
+    }
+  }
+}

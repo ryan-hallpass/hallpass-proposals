@@ -1,0 +1,119 @@
+{
+  "slug": "kalamazoo",
+  "variant": "downtown",
+  "city_name": "Kalamazoo",
+  "city_full": "Downtown Kalamazoo",
+  "prepared_for": "Downtown Kalamazoo",
+  "prepared_date": "September 2026",
+  "contact_name": "Meghan Behymer",
+  "hero": {
+    "headline": "Downtown has a new brand. Now make it *unmistakable.*",
+    "lead": "Your 2025–2027 strategic plan sets the bar: downtown should be “distinct in identity, celebrated in stories, and recognized for its energy and edge.” Hallpass can help turn that ambition into a story people see, remember, and act on.",
+    "photo": {
+      "src": "_src/kalamazoo/hero.jpg",
+      "alt": "A singer dances through the crowd at Beats on Bates in downtown Kalamazoo"
+    },
+    "photo_tag": "Downtown Kalamazoo, Michigan"
+  },
+  "concepts": {
+    "headline": "Make downtown’s stories *visible.*",
+    "lead": "A connected publishing system, not one-off posts, could give visitors, residents, downtown businesses, and prospective tenants multiple ways into the same Downtown Kalamazoo story.",
+    "series": [
+      {
+        "label": "Illustrative series · Short-form video",
+        "title": "Open on the Mall",
+        "description": "Downtown owners on camera: merchant features and new-business highlights, published every week.",
+        "photo": {
+          "src": "_src/kalamazoo/concept1.jpg",
+          "alt": "A holiday window display and shoppers inside a downtown Kalamazoo shop"
+        }
+      },
+      {
+        "label": "Illustrative series · Events and nightlife",
+        "title": "After Five Downtown",
+        "description": "Beats on Bates and the Social District, shown through the people who make a weeknight downtown worth the trip.",
+        "photo": {
+          "src": "_src/kalamazoo/concept2.jpg",
+          "alt": "Central Commons Social District cups under string lights in downtown Kalamazoo"
+        }
+      }
+    ],
+    "social": {
+      "account": "Downtown Kalamazoo",
+      "location": "Kalamazoo, Michigan",
+      "handle": "downtownkalamazoo",
+      "caption": "A fall evening on the Kalamazoo Mall.",
+      "photo": {
+        "src": "_src/kalamazoo/social.jpg",
+        "alt": "Storefronts and fall trees on the Kalamazoo Mall at golden hour"
+      }
+    },
+    "reel": {
+      "handle": "downtownkalamazoo",
+      "avatar": "K",
+      "hook": "Why I opened downtown\n(and why I stay)",
+      "subtitle": "“Honestly? The regulars. People walk in and ask how you’re doing.”",
+      "caption": "Meet the owners behind downtown Kalamazoo’s storefronts.",
+      "photo": {
+        "src": "_src/reels/shop-owner.jpg",
+        "alt": "Illustrative interview with a downtown Kalamazoo shop owner",
+        "position": "center"
+      }
+    }
+  },
+  "plan": {
+    "quote": "Downtown is *unmistakable*—distinct in identity, celebrated in stories, and recognized for its energy and edge.",
+    "quote_source": "Downtown Kalamazoo DDA/DEGA Strategic Plan 2025–2027, adopted August 18, 2025, Vibrant & Visible, p. 10",
+    "outside_help_heading": "The brand is live. The stories are next.",
+    "outside_help_quote": "The plan’s 2026 work plan calls for rolling out the brand “across key platforms” and beginning a “strategic communication plan” (p. 14), and its KPIs track “Growth in social media engagement (quarterly benchmarks)” (p. 15)."
+  },
+  "pov": {
+    "people_line": "We start with people: the owner who opened a shop on the Kalamazoo Mall, the ambassador who keeps every block clean and welcoming, the neighbor who never misses Beats on Bates.",
+    "photo": {
+      "src": "_src/kalamazoo/pov.jpg",
+      "alt": "Downtown Kalamazoo Ambassadors in green uniforms in front of a “Make it a great day, Kalamazoo” mural"
+    },
+    "caption": "Downtown Kalamazoo Ambassadors"
+  },
+  "scale_target": "",
+  "report": {
+    "title_line1": "Downtown Kalamazoo",
+    "pillars": "Built for Business, Place with Purpose, Streetwise & Connected, Vibrant & Visible"
+  },
+  "journey": {
+    "audiences": "visitors, residents, downtown businesses, and prospective tenants",
+    "step1": "More people seeing downtown’s stories",
+    "step3": "More visits and more storefronts filled"
+  },
+  "deliverables": {
+    "launch": [
+      "Content playbook built on the new brand",
+      "Visual one-page summary of the plan",
+      "Downtown owner video series kickoff"
+    ],
+    "monthly": [
+      "Always-on social and short-form video",
+      "Weekly merchant features and new openings",
+      "Event promotion for key seasons (ad spend billed separately)",
+      "Quarterly engagement report tied to plan KPIs"
+    ]
+  },
+  "footer": {
+    "sources_html": "<a href=\"https://downtownkalamazoo.org/wp-content/uploads/2026/06/2025_DDA-DEGA_Strategic-Plan-Adopted-2025-2027.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Downtown Kalamazoo DDA/DEGA Strategic Plan 2025–2027</a>, adopted August 18, 2025.",
+    "photo_credits_html": "Photos courtesy of the <a href=\"https://www.kalamazoocity.org/\" target=\"_blank\" rel=\"noopener noreferrer\">City of Kalamazoo</a>. Reel image is illustrative."
+  },
+  "postcard": {
+    "photo": "_src/postcards/kalamazoo/cc/pride-2011.jpg",
+    "photo_position": "center",
+    "photo_tag": "Downtown Kalamazoo",
+    "photo_credit": "Equality Michigan, CC BY-SA 3.0 (Wikimedia Commons)",
+    "to": {
+      "name": "Meghan Behymer, Downtown Coordinator",
+      "company": "City of Kalamazoo CPED",
+      "address_line1": "150 E Crosstown Pkwy",
+      "address_city": "Kalamazoo",
+      "address_state": "MI",
+      "address_zip": "49001"
+    }
+  }
+}

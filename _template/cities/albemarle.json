@@ -1,0 +1,111 @@
+{
+  "slug": "albemarle",
+  "city_name": "Albemarle",
+  "city_full": "Albemarle County",
+  "prepared_for": "Albemarle County Economic Development",
+  "prepared_date": "September 2026",
+  "contact_name": "Emily Kilroy",
+  "hero": {
+    "headline": "Albemarle has the pieces. Let’s give it a *story.*",
+    "lead": "Your economic development strategic plan calls for a bold investment brand that tells Albemarle’s innovation story to site selectors, business leaders, and the media. Hallpass can help turn that ambition into a story people see, remember, and act on.",
+    "photo": {
+      "src": "_src/albemarle/hero.jpg",
+      "alt": "A cider maker pours a glass for a guest in a sunlit field in Albemarle County"
+    },
+    "photo_tag": "Albemarle County, Virginia"
+  },
+  "concepts": {
+    "headline": "Make Albemarle’s innovation story *visible.*",
+    "lead": "A connected editorial system, not one-off posts, could give site selectors, business leaders, emerging talent, and media multiple ways into the same Albemarle story.",
+    "series": [
+      {
+        "label": "Illustrative series · Modern agribusiness",
+        "title": "Working Lands",
+        "description": "Orchards, cideries, and farm producers turning Albemarle’s agricultural legacy into a modern agribusiness economy.",
+        "photo": {
+          "src": "_src/albemarle/concept1.jpg",
+          "alt": "Aerial view of Carter Mountain Orchard’s barn and crowded terrace above orchard rows at sunset"
+        }
+      },
+      {
+        "label": "Illustrative series · Talent",
+        "title": "Next Gen Albemarle",
+        "description": "Young professionals and entrepreneurs on why they stay, scale, and succeed in Albemarle’s towns.",
+        "photo": {
+          "src": "_src/albemarle/concept2.jpg",
+          "alt": "Aerial view of downtown Crozet with the Blue Ridge behind it"
+        }
+      }
+    ],
+    "reel": {
+      "handle": "rootedinalbemarle",
+      "avatar": "A",
+      "hook": "Why I built my company\nin Albemarle",
+      "subtitle": "“Honestly? I came for UVA. I stayed because this place backs builders.”",
+      "caption": "The founders building Albemarle’s innovation economy.",
+      "photo": {
+        "src": "_src/reels/founder.jpg",
+        "alt": "Illustrative interview with an Albemarle County founder",
+        "position": "center"
+      }
+    }
+  },
+  "plan": {
+    "quote": "A bold, coordinated brand will help the county define its value proposition, communicate clearly with site selectors and business leaders, and give local partners a *shared story to tell.*",
+    "quote_source": "Albemarle County Economic Development Strategic Plan 2025–2030, adopted August 13, 2025, Strategy 5.7, p. 73",
+    "outside_help_heading": "The story is getting lost.",
+    "outside_help_quote": "One of the plan’s own findings: “Albemarle County is doing the work, but too often, the story of that work is lost in the noise” (p. 24). Strategy 5.7 calls for activating the brand “through marketing materials and digital platforms” (p. 73)."
+  },
+  "pov": {
+    "people_line": "We start with people: the life sciences founder scaling up in Albemarle, the cider maker turning heirloom apples into a growing business, the engineer who chose a career near Rivanna Station.",
+    "photo": {
+      "src": "_src/albemarle/pov.jpg",
+      "alt": "Vendors and shoppers at a booth at the Crozet Arts & Crafts Festival"
+    },
+    "caption": "Crozet Arts & Crafts Festival"
+  },
+  "scale_target": "",
+  "report": {
+    "title_line1": "Albemarle County Economic Development",
+    "pillars": "National security, life sciences, modern agribusiness, and talent"
+  },
+  "journey": {
+    "audiences": "business leaders, site selectors, and media",
+    "step1": "More decision-makers seeing Albemarle",
+    "step3": "More qualified investment inquiries"
+  },
+  "deliverables": {
+    "launch": [
+      "Investment and innovation brand narrative",
+      "Visual one-page summary of the plan",
+      "Founder and employer video series kickoff"
+    ],
+    "monthly": [
+      "Always-on social and short-form video",
+      "Sector stories across the plan’s target clusters",
+      "Paid campaigns for site selectors (ad spend billed separately)",
+      "Brand toolkit for employers and partners"
+    ]
+  },
+  "footer": {
+    "sources_html": "<a href=\"https://albemarle.legistar1.com/albemarle/attachments/60049d0e-4f7c-466f-91c2-30ae9ead2399.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Albemarle County Economic Development Strategic Plan 2025–2030</a>, adopted August 13, 2025.",
+    "photo_credits_html": "Photos courtesy of <a href=\"https://www.visitcharlottesville.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit Charlottesville</a>. Reel image is illustrative."
+  },
+  "postcard": {
+    "photo": "_src/postcards/albemarle/cc/carters-mountain.jpg",
+    "photo_position": "center bottom",
+    "photo_tag": "Carter Mountain, Albemarle County",
+    "photo_credit": "Punker1999, CC0 (Wikimedia Commons)",
+    "to": {
+      "name": "Emily Kilroy, Economic Development",
+      "company": "Albemarle County",
+      "address_line1": "401 McIntire Rd",
+      "address_city": "Charlottesville",
+      "address_state": "VA",
+      "address_zip": "22902"
+    },
+    "copy": {
+      "note_tail": "and how it can help the county reach its economic goals."
+    }
+  }
+}

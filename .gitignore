@@ -11,3 +11,5 @@ _src/postcards/*/cc/
 _src/clayton/cand/
 _src/29palms/cand/
 _src/29palms/sheet*.jpg
+_src/*/*-raw.jpg
+_src/sheet*.jpg

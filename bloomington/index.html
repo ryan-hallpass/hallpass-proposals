@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>{{ city_name }} — {{ copy.concept_title }} | Hallpass</title>
-  <meta name="description" content="A {{ copy.concept }} prepared for {{ prepared_for }} by Hallpass Digital." />
+  <title>Bloomington — Place Marketing Concept | Hallpass</title>
+  <meta name="description" content="A place-marketing concept prepared for the Bloomington Port Authority by Hallpass Digital." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ hero.headline | plain }}" />
-  <meta property="og:description" content="A {{ copy.concept }} prepared for {{ prepared_for }} by Hallpass Digital." />
-  <meta property="og:url" content="https://proposals.hallpassdigital.com/{{ slug }}" />
-  <meta property="og:image" content="https://proposals.hallpassdigital.com/{{ slug }}/assets/og.jpg" />
+  <meta property="og:title" content="Bloomington is ready to promote itself. Let’s make its story clear." />
+  <meta property="og:description" content="A place-marketing concept prepared for the Bloomington Port Authority by Hallpass Digital." />
+  <meta property="og:url" content="https://proposals.hallpassdigital.com/bloomington" />
+  <meta property="og:image" content="https://proposals.hallpassdigital.com/bloomington/assets/og.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -476,23 +476,23 @@
         <div class="hero-meta">
           <a class="header-logo" href="#top" aria-label="Hallpass — back to top"><img src="/assets/hallpass-logo.png" alt="Hallpass" width="1235" height="395" /></a>
           <div class="hero-meta-copy">
-            <span>Prepared for {{ prepared_for }}</span>
-            <span>{{ prepared_date }}</span>
+            <span>Prepared for the Bloomington Port Authority</span>
+            <span>September 2026</span>
           </div>
         </div>
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">A {{ copy.concept }}</p>
-            <h1>{{ hero.headline | em }}</h1>
-            <p class="lead">{{ hero.lead }}</p>
+            <p class="eyebrow">A place-marketing concept</p>
+            <h1>Bloomington is ready to promote itself. Let’s make its story <em>clear.</em></h1>
+            <p class="lead">Your economic development strategic plan calls for a campaign that promotes Bloomington as a place to work and do business, anchored by a professional video built for business recruitment and talent attraction. Hallpass can help turn that ambition into a story people see, remember, and act on.</p>
             <div class="hero-actions">
-              <a class="button" href="{{ booking_url }}" target="_blank" rel="noopener noreferrer" data-cta="hero">Book a 30-minute call</a>
-              {% if contact_name %}<span class="hero-marker">A focused two-minute read for {{ contact_name }}</span>{% endif %}
+              <a class="button" href="https://zcal.co/ryanmcneill/hallpass" target="_blank" rel="noopener noreferrer" data-cta="hero">Book a 30-minute call</a>
+              <span class="hero-marker">A focused two-minute read for Holly Masek</span>
             </div>
           </div>
           <figure class="hero-photo">
-            <img src="{{ hero.photo.src }}" alt="{{ hero.photo.alt }}" fetchpriority="high" />
-            <figcaption>{{ hero.photo_tag }}</figcaption>
+            <img src="/bloomington/assets/hero.jpg" alt="A large evening crowd on the lawn at the Normandale Lake Bandshell during Summer Fete" fetchpriority="high" />
+            <figcaption>Bloomington, Minnesota</figcaption>
           </figure>
         </div>
       </div>
@@ -512,9 +512,17 @@
           <div class="trust-logos">
             <p>Trusted by</p>
             <div class="logo-row">
-              {% for l in logos %}
-              <img src="/assets/logos/{{ l.file }}"{% if l.cls %} class="{{ l.cls }}"{% endif %} alt="{{ l.alt }}" loading="lazy" />
-              {% endfor %}
+              
+              <img src="/assets/logos/ada.svg" class="tall" alt="Ardmore Development Authority" loading="lazy" />
+              
+              <img src="/assets/logos/ou.svg" class="wide" alt="The University of Oklahoma" loading="lazy" />
+              
+              <img src="/assets/logos/noble.png" alt="Noble Research Institute" loading="lazy" />
+              
+              <img src="/assets/logos/sea-cadets.png" class="wide" alt="U.S. Naval Sea Cadet Corps" loading="lazy" />
+              
+              <img src="/assets/logos/bgca.svg" alt="Boys &amp; Girls Clubs" loading="lazy" />
+              
             </div>
           </div>
         </div>
@@ -527,29 +535,39 @@
         <div class="concept-intro">
           <div>
             <p class="eyebrow"><span class="section-no">01</span>What this could look like</p>
-            <h2 id="concept-heading">{{ concepts.headline | em }}</h2>
+            <h2 id="concept-heading">Make Bloomington’s advantages <em>visible.</em></h2>
           </div>
-          <p class="lead">{{ concepts.lead }}</p>
+          <p class="lead">A connected editorial system, not one-off posts, could give site selectors, employers, early-career professionals, and the commuters who already work here multiple ways into the same Bloomington story.</p>
         </div>
         <div class="concept-grid">
-          {% for c in concepts.series %}
+          
           <article class="concept">
-            <img src="{{ c.photo.src }}" alt="{{ c.photo.alt }}" loading="lazy" />
+            <img src="/bloomington/assets/concept-1.jpg" alt="Bloom in Bloomington interns and staff standing together at the program graduation" loading="lazy" />
             <div class="concept-shade"></div>
             <div class="concept-copy">
-              <small>{{ c.label }}</small>
-              <h3>{{ c.title }}</h3>
-              <p>{{ c.description }}</p>
+              <small>Illustrative series · Talent attraction</small>
+              <h3>Built in Bloomington</h3>
+              <p>Employers and early-career workers show what a career here looks like, from manufacturing floors to corporate headquarters.</p>
             </div>
           </article>
-          {% endfor %}
-          {% if concepts.reel %}{% set r = concepts.reel %}
-          <article class="concept reel-card" aria-label="Illustrative {{ city_name }} short-form video">
-            <img src="{{ r.photo.src }}" alt="{{ r.photo.alt }}" loading="lazy" style="object-position: {{ r.photo.position | default('center') }}" />
+          
+          <article class="concept">
+            <img src="/bloomington/assets/concept-2.jpg" alt="People dancing near the stage at the On The One Music Festival at Bloomington Central Station Park in the South Loop" loading="lazy" />
+            <div class="concept-shade"></div>
+            <div class="concept-copy">
+              <small>Illustrative series · Quality of place</small>
+              <h3>Every Corner of Bloomington</h3>
+              <p>Parks, festivals, and local businesses from the South Loop to Normandale Lake, shown by the people who use them.</p>
+            </div>
+          </article>
+          
+          
+          <article class="concept reel-card" aria-label="Illustrative Bloomington short-form video">
+            <img src="/bloomington/assets/reel.jpg" alt="Illustrative interview with a Bloomington company owner" loading="lazy" style="object-position: center" />
             <div class="reel-top"></div><div class="reel-bottom"></div>
             <span class="reel-label" aria-hidden="true">Reels</span>
-            <p class="reel-hook">{% for line in r.hook.split("\n") %}<span>{{ line }}</span>{% if not loop.last %}<br />{% endif %}{% endfor %}</p>
-            {% if r.subtitle %}<p class="reel-sub">{{ r.subtitle }}</p>{% endif %}
+            <p class="reel-hook"><span>Why we chose Bloomington</span><br /><span>(and kept growing here)</span></p>
+            <p class="reel-sub">“Honestly? Our team lives close, and the airport is five minutes away.”</p>
             <div class="reel-rail" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
               <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.7 9.7 0 0 1-4-.9L3 21l1.9-4.7A8.5 8.5 0 1 1 21 11.5Z"/></svg>
@@ -557,35 +575,13 @@
               <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4Z"/></svg>
             </div>
             <div class="reel-meta">
-              <div class="reel-who"><i>{{ r.avatar | default(city_name[:1]) }}</i>{{ r.handle }}<em>Follow</em></div>
-              <p>{{ r.caption }}</p>
+              <div class="reel-who"><i>B</i>bloomingtonatwork<em>Follow</em></div>
+              <p>Meet the companies growing in Bloomington.</p>
               <small>♫ Original audio · Illustrative reel</small>
             </div>
             <div class="reel-progress"></div>
           </article>
-          {% else %}
-          {% set s = concepts.social %}
-          <article class="concept social-card" aria-label="Illustrative {{ city_name }} social media post">
-            <div class="social-head">
-              <span class="social-avatar" aria-hidden="true">{{ s.avatar | default(city_name[:1]) }}</span>
-              <div class="social-identity"><strong>{{ s.account }}</strong><span>{{ s.location }}</span></div>
-              <span class="social-more" aria-hidden="true">•••</span>
-            </div>
-            <div class="social-image">
-              <img src="{{ s.photo.src }}" alt="{{ s.photo.alt }}" loading="lazy" />
-            </div>
-            <div class="social-body">
-              <div class="social-actions" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.7 9.7 0 0 1-4-.9L3 21l1.9-4.7A8.5 8.5 0 1 1 21 11.5Z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
-                <svg class="bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4Z"/></svg>
-              </div>
-              <p class="social-caption"><strong>{{ s.handle }}</strong>{{ s.caption }}</p>
-              <span class="social-meta">Illustrative social post</span>
-            </div>
-          </article>
-          {% endif %}
+          
         </div>
         <p class="illustrative note">Illustrative campaign concepts only—not proposed final creative.</p>
       </div>
@@ -595,18 +591,18 @@
     <section class="plan" aria-labelledby="plan-heading">
       <div class="shell plan-grid">
         <div>
-          <p class="eyebrow"><span class="section-no">02</span>{{ plan.eyebrow | default(copy.plan_eyebrow) }}</p>
-          <p class="lead">{{ plan.lead | default(copy.plan_lead) }}</p>
+          <p class="eyebrow"><span class="section-no">02</span>Your plan says</p>
+          <p class="lead">The strategic direction is already set. The next step is a publishing system that gives that direction a recognizable voice, a steady cadence, and measurable reach.</p>
         </div>
         <div>
-          <h2 id="plan-heading" class="quote">“{{ plan.quote | strong }}”</h2>
-          <p class="quote-source">{{ plan.quote_source }}</p>
-          {% if plan.outside_help_quote %}
+          <h2 id="plan-heading" class="quote">“Clearly articulating the Bloomington story and sharing it <strong>consistently across platforms and audiences</strong> will help amplify the efforts of multiple partners.”</h2>
+          <p class="quote-source">Port Authority of the City of Bloomington Economic Development Strategic Plan, adopted February 2025, p. 3</p>
+          
           <div class="outside-note">
-            <b>{{ plan.outside_help_heading | default("The implementation window is open.") }}</b>
-            {{ plan.outside_help_quote }}
+            <b>The plan already calls for video.</b>
+            Action 8.1.2 calls for a marketing campaign focused on business and talent attraction, including “a professional promotional video highlighting innovation and quality of place in Bloomington that can be used for business recruitment and talent attraction” (p. 25).
           </div>
-          {% endif %}
+          
         </div>
       </div>
     </section>
@@ -619,13 +615,13 @@
           <h2 id="manifesto-heading">Made to be watched, not just <em>approved.</em></h2>
           <div class="manifesto-copy">
             <p>We’ve all seen the drone footage with the inspirational voiceover. It has its place. But attention rarely starts at 400 feet.</p>
-            <p>{{ pov.people_line }}</p>
+            <p>We start with people: the manufacturer that chose to grow here, the intern who found a career through Bloom in Bloomington, the local owner who pitched at Hatch and expanded.</p>
             <p class="manifesto-close">Story. Hooks. Emotion. Human interest. That’s what people choose to watch—and the results below are the proof.</p>
           </div>
         </div>
         <figure class="manifesto-photo">
-          <img src="{{ pov.photo.src }}" alt="{{ pov.photo.alt }}" loading="lazy" />
-          <figcaption>{{ pov.caption }}</figcaption>
+          <img src="/bloomington/assets/pov.jpg" alt="A vendor bags strawberries for customers at the Bloomington Farmers Market" loading="lazy" />
+          <figcaption>Bloomington Farmers Market</figcaption>
         </figure>
       </div>
     </section>
@@ -653,9 +649,7 @@
               </div>
               <p class="growth-note">Before: 98K views in nine months (combined ADA + ATA accounts). After: 1.4M+ on Ardmore Means More channels.</p>
             </figure>
-            {% if scale_target %}
-            <div class="scale-note">For scale: {{ city_name }}’s plan sets a target of <b>{{ scale_target }}</b>. Ardmore Means More earned <b>1.4M+ organic views</b> in its first year.</div>
-            {% endif %}
+            
           </div>
         </div>
 
@@ -664,7 +658,7 @@
           <p>Stories from Ardmore Means More. Each one starts with a local place and the people who give it meaning.</p>
         </div>
         <div class="reels" id="reels">
-{% set airpark_reel %}
+
           <article class="reel" data-platform="facebook" data-permalink="https://www.facebook.com/reel/3089098644764980/" data-title="1,000+ acres, ready to build">
             <div class="reel-frame"></div>
             <div class="reel-caption">
@@ -673,7 +667,7 @@
               <small>Ardmore’s industrial airpark, pitched to site selectors in under a minute: location, rail, runway, and room to grow.</small>
             </div>
           </article>
-          {% endset %}{% if variant not in ("tourism", "downtown") %}{{ airpark_reel }}{% endif %}
+          
           <article class="reel" data-platform="instagram" data-permalink="https://www.instagram.com/reel/DWESx-akYF0/" data-title="More than a stop on the map">
             <div class="reel-frame"></div>
             <div class="reel-caption">
@@ -690,7 +684,7 @@
               <small>The family behind Café Alley, The Commodore, and The Dew Drop Inn.</small>
             </div>
           </article>
-          {% if variant in ("tourism", "downtown") %}{{ airpark_reel }}{% endif %}
+          
         </div>
 
         <figure class="testimonial">
@@ -714,12 +708,12 @@
         </div>
         <div class="report-sheet" aria-label="Example structure of a quarterly board report">
           <div class="report-head">
-            <strong>{{ report.title_line1 }}<br />Quarterly Visibility Brief</strong>
+            <strong>Bloomington Port Authority<br />Quarterly Visibility Brief</strong>
             <span>EXAMPLE STRUCTURE<br />BOARD-READY</span>
           </div>
           <div class="report-row"><b>01</b><div><strong>Outcome summary</strong><small>Reach, audience growth, engagement, and earned coverage</small></div><em>Measured</em></div>
           <div class="report-row"><b>02</b><div><strong>What earned attention</strong><small>Top stories, formats, themes, and audience signals</small></div><em>Interpreted</em></div>
-          <div class="report-row"><b>03</b><div><strong>{{ copy.report_row3 }}</strong><small>{{ report.pillars }}</small></div><em>Aligned</em></div>
+          <div class="report-row"><b>03</b><div><strong>Connection to the plan</strong><small>Strategic location, robust infrastructure, diverse industries, rich cultural assets</small></div><em>Aligned</em></div>
           <div class="report-row"><b>04</b><div><strong>Next-quarter priorities</strong><small>Editorial calendar, optimization, and opportunities</small></div><em>Actionable</em></div>
           <div class="report-foot"><span>One source of truth</span><span>Monthly tracking · Quarterly narrative</span></div>
         </div>
@@ -734,7 +728,7 @@
             <p class="eyebrow"><span class="section-no">05</span>Capabilities at a glance</p>
             <h2 id="work-heading">One partner from strategy to steady output.</h2>
           </div>
-          <p>We connect the plan, the story, and the publishing rhythm—so {{ copy.team }} get more than a campaign launch. They get a durable system for showing progress in public and {{ copy.report_to }}.</p>
+          <p>We connect the plan, the story, and the publishing rhythm—so economic development teams get more than a campaign launch. They get a durable system for showing progress in public and reporting it internally.</p>
         </div>
         <div class="capabilities" aria-label="Hallpass capabilities">
           <article class="capability"><span class="num">01</span><h3>Brand strategy &amp; messaging</h3><p>Positioning, narrative, and voice.</p></article>
@@ -752,32 +746,32 @@
               <p class="eyebrow">The full journey</p>
               <h3 id="journey-heading">Every impression has a job.</h3>
             </div>
-            <p>We do not stop at clicks and views. For {{ journey.audiences }}, we build the next useful step toward choosing {{ city_name }}.</p>
+            <p>We do not stop at clicks and views. For site selectors, employers, and early-career professionals, we build the next useful step toward choosing Bloomington.</p>
           </div>
           <div class="journey-steps">
-            <div class="journey-step"><span>01 · First impression</span><strong>{{ journey.step1 }}</strong><p>Earn attention with stories people choose to watch.</p></div>
-            <div class="journey-step"><span>02 · Consideration</span><strong>{{ copy.step2_title }}</strong><p>{{ copy.step2_body }}</p></div>
-            <div class="journey-step"><span>03 · Conversion</span><strong>{{ journey.step3 }}</strong><p>{{ copy.step3_body }}</p></div>
+            <div class="journey-step"><span>01 · First impression</span><strong>More early-career professionals seeing Bloomington</strong><p>Earn attention with stories people choose to watch.</p></div>
+            <div class="journey-step"><span>02 · Consideration</span><strong>Make Bloomington easier to evaluate</strong><p>Sector collateral, RFI-ready materials, and site-visit support answer the next questions.</p></div>
+            <div class="journey-step"><span>03 · Conversion</span><strong>More qualified business and talent conversations</strong><p>Turn qualified interest into direct economic-development conversations.</p></div>
           </div>
-          <p class="journey-close">Every top-of-funnel number ladders to the bottom-of-funnel outcome {{ city_name }} actually wants.</p>
+          <p class="journey-close">Every top-of-funnel number ladders to the bottom-of-funnel outcome Bloomington actually wants.</p>
         </div>
-        <div class="offers" aria-label="Potential {{ city_name }} Year One Partnership investment and deliverables">
+        <div class="offers" aria-label="Potential Bloomington Year One Partnership investment and deliverables">
           <div class="partnership-head">
             <div>
-              <p class="eyebrow">What a {{ city_name }} Year One Partnership could include</p>
+              <p class="eyebrow">What a Bloomington Year One Partnership could include</p>
               <div class="price-tiers">
                 <div class="price-tier start">
                   <span class="price-label">Start with The Launch</span>
                   <strong>$19,500 <span>+ travel</span></strong>
-                  <p>A production trip to {{ city_name }}. Three months of people-first social media videos. A playbook that shows your team how to grow it from there.</p>
+                  <p>A production trip to Bloomington. Three months of people-first social media videos. A playbook that shows your team how to grow it from there.</p>
                 </div>
                 <div class="price-tier">
                   <span class="price-label">Then continue with The Signal</span>
                   <strong>$9,500 <span>/ month</span></strong>
-                  <p>{{ copy.signal_body }}</p>
+                  <p>A twelve-month program that turns Bloomington’s adopted strategy into steady publishing and board-ready reporting.</p>
                 </div>
               </div>
-              <p class="price-flex">Scope and investment are shaped around your budget and {{ copy.priorities }}.</p>
+              <p class="price-flex">Scope and investment are shaped around your budget and the plan’s priorities.</p>
             </div>
             <span class="partnership-term">Illustrative 12-month view</span>
           </div>
@@ -785,15 +779,20 @@
             <article class="deliverable-group">
               <span class="phase">01 · One-time</span>
               <h3>Foundation</h3>
-              <ul>{% for b in deliverables.launch %}
-                <li>{{ b | fine }}</li>{% endfor %}
+              <ul>
+                <li>Business and talent attraction messaging</li>
+                <li>Visual one-page summary of the plan</li>
+                <li>Promotional video on innovation and place</li>
               </ul>
             </article>
             <article class="deliverable-group">
               <span class="phase">02 · Monthly</span>
               <h3>Recurring engine</h3>
-              <ul>{% for b in deliverables.monthly %}
-                <li>{{ b | fine }}</li>{% endfor %}
+              <ul>
+                <li>Always-on social and short-form video</li>
+                <li>Employer and talent story series</li>
+                <li>Paid campaigns for early-career talent <span class="fine">(ad spend billed separately)</span></li>
+                <li>Story content for newsletters and partners</li>
               </ul>
             </article>
             <article class="deliverable-group">
@@ -813,20 +812,20 @@
     <section class="cta" aria-labelledby="cta-heading">
       <div class="shell">
         <p class="eyebrow">A practical next conversation</p>
-        <h2 id="cta-heading">{{ cta_headline | default(copy.cta) }}</h2>
-        <p>{{ copy.cta_note }}</p>
-        <a class="button" href="{{ booking_url }}" target="_blank" rel="noopener noreferrer" data-cta="closing">Book a 30-minute call</a>
-        <p class="note">30 minutes · No preparation needed · Or email <a href="mailto:ryan@hallpassdigital.com?subject={{ (city_name ~ ' ' ~ copy.concept) | urlencode }}">ryan@hallpassdigital.com</a></p>
+        <h2 id="cta-heading">Let’s put Bloomington’s story to work for its economic goals.</h2>
+        <p>Let’s spend 30 minutes on the plan, the near-term opportunity, and what a focused first phase could look like.</p>
+        <a class="button" href="https://zcal.co/ryanmcneill/hallpass" target="_blank" rel="noopener noreferrer" data-cta="closing">Book a 30-minute call</a>
+        <p class="note">30 minutes · No preparation needed · Or email <a href="mailto:ryan@hallpassdigital.com?subject=Bloomington%20place-marketing%20concept">ryan@hallpassdigital.com</a></p>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="shell footer-grid">
-      <div class="footer-brand"><img class="footer-logo" src="/assets/hallpass-logo.png" alt="Hallpass" width="1235" height="395" /><span class="note">{{ copy.footer }}</span></div>
+      <div class="footer-brand"><img class="footer-logo" src="/assets/hallpass-logo.png" alt="Hallpass" width="1235" height="395" /><span class="note">Economic development &amp; place marketing.</span></div>
       <div class="sources">
-        <div>Sources: {{ footer.sources_html | safe }} Ardmore results reported by the Ardmore Development Authority, August 2026.</div>
-        <div>Photography: {{ footer.photo_credits_html | safe }} Client logos are trademarks of their respective owners.</div>
+        <div>Sources: <a href="https://www.bloomingtonmn.gov/port/economic-development-strategic-plan" target="_blank" rel="noopener noreferrer">Port Authority of the City of Bloomington Economic Development Strategic Plan</a>, adopted February 2025. Ardmore results reported by the Ardmore Development Authority, August 2026.</div>
+        <div>Photography: Photos courtesy of the <a href="https://www.bloomingtonmn.gov/" target="_blank" rel="noopener noreferrer">City of Bloomington</a>. Reel image is illustrative. Client logos are trademarks of their respective owners.</div>
       </div>
     </div>
   </footer>
